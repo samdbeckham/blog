@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+<main role="main">
+	<h1>Patterns</h1>
+	<nav>
+		<ul>
+			{% assign components = site.pages | where:'layout', 'component' | sort: 'group' %}
+			{% for component in components %}
+				<li><a href="#pattern--{{ component.slug }}">{{ component.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+	<ul class="pattern__components">
+		{% for component in components %}
+			<li id="pattern--{{ component.slug }}" class="pattern__component">
+				<div class="content">
+					<h2>{{ component.title }}</h2>
+					{{ component.description | markdownify }}
+					<div class="pattern__component__example">
+						{{ component.content }}
+					</div>
+				</div>
+				<div class="highlight"><pre><code>{{ component.content | xml_escape  }}</code></pre></div>
+			</li>
+		{% endfor %}
+	</ul>
+</main>
