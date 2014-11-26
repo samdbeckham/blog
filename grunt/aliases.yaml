@@ -1,7 +1,17 @@
 default:
- - 'sass:dev'
- - 'copy:dev'
+ - serve
+
+serve:
+ - 'clean:server'
  - 'jekyll:dev'
- - 'htmlmin:dev'
- - 'connect:dev'
+ - 'sass:dev'
+ - 'autoprefixer:dev'
+ - 'connect'
  - 'watch'
+
+build:
+ - 'clean:dist'
+ - 'jekyll:dist'
+ - 'sass:dist'
+ - 'autoprefixer:dist'
+ - 'htmlmin'

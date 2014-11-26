@@ -1,8 +1,5 @@
-_site
 .sass-cache
 .DS_store
-config/compass.rb
+.tmp
 node_modules
 bower_components
-.tmp
-server
