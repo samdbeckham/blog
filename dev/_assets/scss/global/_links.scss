@@ -1,0 +1,13 @@
+a{
+    color: $color__blue;
+    transition: all .4s;
+
+    &:hover,
+    &:focus{
+        color: $color__blue--light;
+    }
+
+    &:visited{
+        color: $color__purple;
+    }
+}
