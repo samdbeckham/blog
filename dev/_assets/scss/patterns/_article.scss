@@ -1,0 +1,20 @@
+.article__header{
+	@extend %layout__default;
+	@extend %layout__header;
+
+	background-color: $color__flat--red-1;
+	background-image: linear-gradient(to top,$color__flat--red-1 0, $color__flat--orange-1 100%);
+}
+
+.article__content{
+	@extend %layout__default;
+	@extend %layout__content;
+	
+	img{
+		background-color: $color__flat--gray-4;
+		display: block;
+		height: 100px;
+		width: 100% + percentage( map-get($columns, c) / map-get($columns, d) );
+		margin-left: 0 - percentage( map-get($columns, c) );
+	}
+}

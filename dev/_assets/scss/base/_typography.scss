@@ -1,0 +1,55 @@
+$body-font: 'Hoefler Text', times, serif;
+$alt-font: 'Avenir Next', futura, sans-serif;
+$heading-font: $body-font;
+
+$line-height: $ratio#{em};
+$font-weight: 400;
+$font-size: 16;
+
+html{
+	font-family: $body-font;
+	line-height: $line-height;
+	font-size: $font-size#{px};
+	font-weight: $font-weight;
+
+	@include breakpoint(medium){
+		font-size: 1.2em;
+	}
+	@include breakpoint(large){
+		font-size: 1.4em;
+	}
+}
+
+%hn{
+	line-height: 1em;
+	margin: $ratio#{em} 0 $ratio-inv#{em};
+}
+
+h1{
+	@extend %hn;
+
+	font-size: $ratio--2#{em};
+}
+
+h2{
+	@extend %hn;
+
+	font-size: $ratio#{em};
+}
+
+h3,
+h4{
+	@extend %hn;
+
+	font-size: 1 + (.5 * $ratio-inv)#{em};
+}
+
+p{
+	margin-bottom: $ratio-inv#{em};
+	max-width: 38em;
+
+	&:first-of-type{
+		font-size: $ratio#{em};
+		line-height: $ratio#{em};
+	}
+}

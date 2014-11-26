@@ -1,0 +1,78 @@
+// color-scheme
+
+// Greens
+$color__flat--turquoise: #1ABC9C;
+$color__flat--green-sea: #16A085;
+$color__flat--emerald: #2ECC71;
+$color__flat--nephritis: #27AE60;
+
+// Blues
+$color__flat--peter-river: #3498DB;
+$color__flat--belize-hole: #2980B9;
+$color__flat--wet-asphalt: #34495E;
+$color__flat--midnight-blue: #2C3E50;
+
+// Purples
+$color__flat--amethyst: #9B59B6;
+$color__flat--wisteria: #8E44AD;
+
+// Yellows
+$color__flat--suncolor__flow-er: #F1C40F;
+
+// Oranges
+$color__flat--orange: #F39C12;
+$color__flat--carrot: #E67E22;
+$color__flat--pumpkin: #D35400;
+
+// Reds
+$color__flat--alizarin: #E74C3C;
+$color__flat--pomegranate: #C0392B;
+
+// Grays
+$color__flat--clouds: #ECF0F1;
+$color__flat--silver: #BDC3C7;
+$color__flat--concrete: #95A5A6;
+$color__flat--asbestos: #7F8C8D;
+
+// Aliases make colors easier to remember.
+
+// Greens
+$color__flat--green-1: $color__flat--turquoise;
+$color__flat--green-2: $color__flat--green-sea;
+$color__flat--green-3: $color__flat--emerald;
+$color__flat--green-4: $color__flat--nephritis;
+
+// Blues
+$color__flat--blue-1: $color__flat--peter-river;
+$color__flat--blue-2: $color__flat--belize-hole;
+$color__flat--blue-3: $color__flat--wet-asphalt;
+$color__flat--blue-4: $color__flat--midnight-blue;
+
+// Purples
+$color__flat--purple-1: $color__flat--amethyst;
+$color__flat--purple-2: $color__flat--wisteria;
+
+// Yellows
+$color__flat--yellow-1: $color__flat--suncolor__flow-er;
+
+// Oranges
+$color__flat--orange-1: $color__flat--orange;
+$color__flat--orange-2: $color__flat--carrot;
+$color__flat--orange-3: $color__flat--pumpkin;
+
+// Refs
+$color__flat--red-1: $color__flat--alizarin;
+$color__flat--red-2: $color__flat--pomegranate;
+
+// Grays
+$color__flat--gray-1: $color__flat--clouds;
+$color__flat--gray-2: $color__flat--silver;
+$color__flat--gray-3: $color__flat--concrete;
+$color__flat--gray-4: $color__flat--asbestos;
+
+// Even more generic
+$color__black: #4A4A4A;
+$color__white: #ffffff;
+$color__link: $color__flat--blue-1;
+$color__link--hover: $color__flat--blue-2;
+$color__link--visited: $color__flat--purple-2;

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Stuff I wrote
+slug: wrote
+---
+
+<section class="post-list">
+    <header class="post-list__header">
+    	<div class="wrapper">
+	        <h1>{{ page.title }}</h1>
+	        <h2>Blog posts and the like.</h2>
+	    </div>
+    </header>
+	<ul>
+    	{% for post in site.posts %}
+			<li class="post-list__content">
+				<div class="wrapper">
+					<a href="{{ post.url }}" class="post-list__button button">Read post</a>
+					<div class="post-list__title">
+						<h2>{{ post.title }}</h2>
+						<h3>{{ post.date | date: "%-d %B %Y" }}</h3>
+					</div>
+				</div>
+			</li>
+    	{% endfor %}
+    </ul>
+</section>
+
+{% include footer.html %}

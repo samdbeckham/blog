@@ -1,0 +1,49 @@
+// This is the shame file. It is meant to be used solely as a sandbox.
+// Don't leave stuff in here and release it. It's tacky and I hate you.
+
+.page-header{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: transparent;
+	transition: background-color 1s;
+
+	.wrapper{
+		padding-top: $ratio-inv#{em};
+		padding-bottom: $ratio-inv#{em};
+	}
+
+	&.fixed{
+		position: fixed;
+		background-color: $color__white;
+		z-index: 9;
+	}
+}
+
+.main-nav{
+	position: absolute;
+	right: $ratio-inv#{em};
+	top: $ratio-inv#{em};
+
+	li{
+		display: inline-block;
+		font-size: $ratio-inv#{em};
+	}
+
+	a{
+		font-family: $alt-font;
+		text-transform: uppercase;
+		color: $color__white;
+		text-decoration: none;
+		background-color: $color__flat__gray-4;
+		background-color: rgba($color__black, $ratio-inv);
+		padding: $ratio-inv--2#{em} $ratio#{em};
+
+		&:hover,
+		&:focus,
+		&.active{
+			background-color: $color__black;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+name: Sam Beckham
+markdown: redcarpet
+pygments: true
+permalink: /wrote/:title
+exclude: ['config', 'README.md']
+include: ['.htaccess']

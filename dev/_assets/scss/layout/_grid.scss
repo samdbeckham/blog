@@ -1,0 +1,72 @@
+// grid
+
+$columns: (
+	a: .102,
+	b: .115,
+	c: .051,
+	d: .722
+);
+
+%layout__container{
+	width: 100%;
+	max-width: map-get($breakpoints, large);
+	margin: 0 auto;
+	padding: $ratio#{em};
+	position: relative;
+}
+.wrapper{
+	@extend %layout__container;
+}
+
+%layout__default{
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+%layout__gutter{
+	@include breakpoint(medium){
+		width: percentage( map-get($columns, a) + map-get($columns, b) );
+	}
+}
+
+%layout__content{
+	@include breakpoint(medium){
+		width: percentage( map-get($columns, d) );
+		margin-left: percentage( map-get($columns, a) + map-get($columns, b) + map-get($columns, c) );
+	}
+}
+
+%layout__content--with-gutter{
+	@include breakpoint(medium){
+		width: percentage( map-get($columns, d) );
+		margin-left: percentage( map-get($columns, c) );
+	}
+}
+
+%layout__header{
+	min-height: map-get($breakpoints, small);
+	height: map-get($columns, d) * 100#{vh};
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-flow: row wrap;
+	width: 100%;
+
+	h1,
+	h2{
+		display: block;
+		// width: 100%;
+		@extend %layout__content;
+
+		margin-top: 0;
+	}
+
+	h2{
+		color: $color__white;
+	}
+}
+
+code{
+	display: none;
+}

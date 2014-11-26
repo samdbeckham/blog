@@ -1,0 +1,7 @@
+default:
+ - 'sass:dev'
+ - 'copy:dev'
+ - 'jekyll:dev'
+ - 'htmlmin:dev'
+ - 'connect:dev'
+ - 'watch'
