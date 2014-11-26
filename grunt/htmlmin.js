@@ -1,35 +1,19 @@
 module.exports = {
-    dev: { 
-        options: {
-            collapseWhitespace: true
-        },
-        files: [
-            {
-                expand: true,
-                dot: true,
-                cwd: 'server',
-                dest: 'server',
-                src: [
-                    '**/*.html', // Copies all HTML
-                ]
-            }
-        ]
-    },
     dist: { 
         options: {
             collapseWhitespace: true,
             removeComments: true,
+            removeIgnored: true,
+            // lint: true,
         },
         files: [
             {
                 expand: true,
                 dot: true,
-                cwd: '.tmp/',
-                dest: '.tmp/',
-                src: [
-                    '**/*.html', // Copies all HTML
-                ]
+                cwd: 'web/',
+                dest:'web/',
+                src: ['**/*.html']
             }
         ]
-    },
+    }
 };
