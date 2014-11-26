@@ -9,15 +9,15 @@ html{
 }
 
 a{
-	color: $color__link;
+	color: $color__blue;
 	transition: all .4s;
 
 	&:hover,
 	&:focus{
-		color: $color__link--hover;
+		color: $color__blue--light;
 	}
 
 	&:visited{
-		color: $color__link--visited;
+		color: $color__purple;
 	}
 }

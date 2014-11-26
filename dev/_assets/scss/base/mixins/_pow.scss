@@ -1,0 +1,21 @@
+// Pow mixin
+// pow(x, y) => x^y
+// eg, pow(3, 2) => 3^2 = 9
+
+@function pow($int, $exp) {
+    $answer : $int;
+
+    @if $exp < 1 {
+        @return 0;
+    }
+
+    @if $exp < 2 {
+        @return $answer;
+    }
+
+    @for $i from 2 through $exp {
+        $answer : $answer * $int;
+    }
+
+    @return $answer;
+}

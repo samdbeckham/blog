@@ -1,16 +1,22 @@
-@import "reset";
+@import "base/variables.scss";
+@import "base/reset.scss";
+@import "base/color-scheme.scss";
+@import "base/mixins.scss";
+@import "base/typography.scss";
 
-@import "mixins/breakpoints";
-@import "mixins/placeholders";
+// @import "base/forms.scss";
 
-@import "base/variables";
-@import "base/typography";
-@import "base/color-scheme";
-@import "base/main";
+@import "layout/grid.scss";
 
-@import "layout/grid";
+@import "global/base.scss";
+// @import "global/headings.scss";
+// @import "global/icons.scss";
+// @import "global/images.scss";
+// @import "global/links.scss";
+// @import "global/paragraphs.scss";
+// @import "global/text.scss";
 
-@import "patterns/article";
-@import "patterns/post-list";
+@import "components/article";
+@import "components/post-list";
 
-@import "shame";
+@import "base/shame.scss";

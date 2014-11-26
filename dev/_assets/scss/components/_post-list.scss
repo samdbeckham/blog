@@ -2,13 +2,11 @@
 	@extend %layout__default;
 	@extend %layout__header;
 
-	background-color: $color__flat--gray-3;
+	background-color: $color__gray--light;
 }
 
 .post-list__content{
 	padding: $ratio-inv#{em};
-
-	background-image: linear-gradient(to bottom,$color__flat--red-1 0, $color__flat--orange-1 100%);
 }
 
 .post-list__button{

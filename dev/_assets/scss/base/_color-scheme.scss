@@ -1,78 +1,31 @@
-// color-scheme
-
-// Greens
-$color__flat--turquoise: #1ABC9C;
-$color__flat--green-sea: #16A085;
-$color__flat--emerald: #2ECC71;
-$color__flat--nephritis: #27AE60;
-
-// Blues
-$color__flat--peter-river: #3498DB;
-$color__flat--belize-hole: #2980B9;
-$color__flat--wet-asphalt: #34495E;
-$color__flat--midnight-blue: #2C3E50;
-
-// Purples
-$color__flat--amethyst: #9B59B6;
-$color__flat--wisteria: #8E44AD;
-
-// Yellows
-$color__flat--suncolor__flow-er: #F1C40F;
-
-// Oranges
-$color__flat--orange: #F39C12;
-$color__flat--carrot: #E67E22;
-$color__flat--pumpkin: #D35400;
-
-// Reds
-$color__flat--alizarin: #E74C3C;
-$color__flat--pomegranate: #C0392B;
-
-// Grays
-$color__flat--clouds: #ECF0F1;
-$color__flat--silver: #BDC3C7;
-$color__flat--concrete: #95A5A6;
-$color__flat--asbestos: #7F8C8D;
-
-// Aliases make colors easier to remember.
-
-// Greens
-$color__flat--green-1: $color__flat--turquoise;
-$color__flat--green-2: $color__flat--green-sea;
-$color__flat--green-3: $color__flat--emerald;
-$color__flat--green-4: $color__flat--nephritis;
-
-// Blues
-$color__flat--blue-1: $color__flat--peter-river;
-$color__flat--blue-2: $color__flat--belize-hole;
-$color__flat--blue-3: $color__flat--wet-asphalt;
-$color__flat--blue-4: $color__flat--midnight-blue;
-
-// Purples
-$color__flat--purple-1: $color__flat--amethyst;
-$color__flat--purple-2: $color__flat--wisteria;
-
-// Yellows
-$color__flat--yellow-1: $color__flat--suncolor__flow-er;
-
-// Oranges
-$color__flat--orange-1: $color__flat--orange;
-$color__flat--orange-2: $color__flat--carrot;
-$color__flat--orange-3: $color__flat--pumpkin;
-
-// Refs
-$color__flat--red-1: $color__flat--alizarin;
-$color__flat--red-2: $color__flat--pomegranate;
-
-// Grays
-$color__flat--gray-1: $color__flat--clouds;
-$color__flat--gray-2: $color__flat--silver;
-$color__flat--gray-3: $color__flat--concrete;
-$color__flat--gray-4: $color__flat--asbestos;
-
-// Even more generic
-$color__black: #4A4A4A;
+$color__black: #222222;
 $color__white: #ffffff;
-$color__link: $color__flat--blue-1;
-$color__link--hover: $color__flat--blue-2;
-$color__link--visited: $color__flat--purple-2;
+
+$color__gray: #4d4d4d;
+$color__gray--light: #ccc;
+
+// Colors
+
+$color__red: #EF4836;
+$color__red--light: lighten($color__red, 12%);
+$color__red--dark: darken($color__red, 12%);
+
+$color__orange: #EB9532;
+$color__orange--light: lighten($color__orange, 12%);
+$orange--dark: darken($color__orange, 12%);
+
+$color__yellow: #F4D03F;
+$color__yellow--light: lighten($color__yellow, 12%);
+$color__yellow--dark: darken($color__yellow, 12%);
+
+$color__green: #1BBC9B;
+$color__green--light: lighten($color__green, 12%);
+$color__green--dark: darken($color__green, 12%);
+
+$color__blue: #3498DB;
+$color__blue--light: lighten($color__blue, 12%);
+$color__blue--dark: darken($color__blue, 12%);
+
+$color__purple: #8E44AD;
+$color__purple--light: lighten($color__purple, 12%);
+$color__purple--dark: darken($color__purple, 12%);
