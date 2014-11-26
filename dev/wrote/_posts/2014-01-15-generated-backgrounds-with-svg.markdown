@@ -10,8 +10,7 @@ Just before Christmas I decided to have a play about with SVG on Codepen. It got
 
 This idea was born because I needed a way to generate isometric backgrounds on-the-fly with a set colour palette. I decided the best way to do it would be to use a formula that would write some SVG code and apply it to the background of an element. The problem was, I’d never used SVG before and [I had no idea what I was doing](http://i.imgur.com/EiVhZ.gif).
 
-Polka dots
-----------
+## Polka dots
 
 I decided to start small and get the basics down first. If I could get something simple generated in SVG first then I could move onto writing the formula that would generate my shapes. I created a [random polka dot generator](http://codepen.io/sambeckham/pen/ouvGg) that was surprisingly simple.
 
