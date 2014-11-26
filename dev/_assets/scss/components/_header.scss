@@ -1,0 +1,19 @@
+.page-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 1s;
+
+    .wrapper{
+        padding-top: $ratio-inv#{em};
+        padding-bottom: $ratio-inv#{em};
+    }
+
+    &.fixed{
+        position: fixed;
+        background-color: $color__white;
+        z-index: 9;
+    }
+}
