@@ -25,27 +25,26 @@ $columns: (
 }
 
 %layout__gutter{
-	@include breakpoint(medium){
+	@include breakpoint(small){
 		width: percentage( map-get($columns, a) + map-get($columns, b) );
 	}
 }
 
 %layout__content{
-	@include breakpoint(medium){
+	@include breakpoint(small){
 		width: percentage( map-get($columns, d) );
 		margin-left: percentage( map-get($columns, a) + map-get($columns, b) + map-get($columns, c) );
 	}
 }
 
 %layout__content--with-gutter{
-	@include breakpoint(medium){
+	@include breakpoint(small){
 		width: percentage( map-get($columns, d) );
 		margin-left: percentage( map-get($columns, c) );
 	}
 }
 
 %layout__header{
-	min-height: map-get($breakpoints, small);
 	height: map-get($columns, d) * 100#{vh};
 	display: flex;
 	align-items: center;
@@ -55,10 +54,9 @@ $columns: (
 
 	h1,
 	h2{
-		display: block;
-		// width: 100%;
 		@extend %layout__content;
 
+		display: block;
 		margin-top: 0;
 	}
 

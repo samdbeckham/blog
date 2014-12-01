@@ -12,8 +12,5 @@
 	img{
 		background-color: $color__gray;
 		display: block;
-		height: 100px;
-		width: 100% + percentage( map-get($columns, c) / map-get($columns, d) );
-		margin-left: 0 - percentage( map-get($columns, c) );
 	}
 }

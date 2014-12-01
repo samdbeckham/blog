@@ -1,14 +1,14 @@
 $breakpoints: (
-	small  : 300px,
-	medium : 600px,
-	large  : 800px
+	small  : 38em,
+	medium : 56em,
+	large  : 72em
 );
 
 $default-breakpoint: root;
 $current-breakpoint: $default-breakpoint;
 @mixin breakpoint($breakpoint) {
     $value: map-get($breakpoints, $breakpoint);
- 
+
 	@if $value != null {
 		$current-breakpoint: $breakpoint !global;
 
