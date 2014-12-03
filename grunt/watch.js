@@ -6,6 +6,15 @@ module.exports = {
         files: 'dev/_assets/scss/{,*/,*/*/}*.scss',
         tasks: ['sass:dev','autoprefixer:dev'],
     },
+    svg: {
+        files: 'dev/_assets/svg/{,*/}*.svg',
+        tasks: [
+            'svgstore',
+            'jekyll:dev',
+            'sass:dev',
+            'autoprefixer:dev'
+        ],
+    },
     jekyll: {
         files: [
             'dev/{,*/_posts/}*.{md,markdown}',

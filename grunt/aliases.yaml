@@ -3,6 +3,7 @@ default:
 
 serve:
  - 'clean:server'
+ - 'svgstore'
  - 'jekyll:dev'
  - 'sass:dev'
  - 'autoprefixer:dev'
