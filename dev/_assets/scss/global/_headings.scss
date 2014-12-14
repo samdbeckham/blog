@@ -1,5 +1,7 @@
 %hn{
+    font-family: $heading-font;
     line-height: 1em;
+    font-weight: 500;
     margin: $ratio#{em} 0 $ratio-inv#{em};
 }
 

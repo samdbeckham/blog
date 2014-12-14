@@ -3,11 +3,30 @@
 	@extend %layout__header;
 
 	background-color: $color__red;
+	background-image: url('http://pixabay.com/get/67fd6a2132912a61d651/1417647248/iss-548328_1280.jpg?direct');
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.article__header__headings{
+	@extend %layout__default;
+	@extend %layout__content;
+
+	background-color: $color__white;
+	padding: $ratio-inv#{em};
+
+	h1{
+		margin: 0;
+	}
 }
 
 .article__content{
 	@extend %layout__default;
 	@extend %layout__content;
+
+    color: $color__gray;
 
 	img{
 		background-color: $color__gray;
