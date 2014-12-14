@@ -47,22 +47,10 @@ $columns: (
 %layout__header{
 	height: map-get($columns, d) * 100#{vh};
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	align-content: center;
 	flex-flow: row wrap;
 	width: 100%;
-
-	h1,
-	h2{
-		@extend %layout__content;
-
-		display: block;
-		margin-top: 0;
-	}
-
-	h2{
-		color: $color__white;
-	}
 }
 
 code{
