@@ -1,13 +1,22 @@
+$underline-height: 2px;
+
 a{
     color: $color__blue;
     transition: all .4s;
 
     &:hover,
-    &:focus{
+    &:focus,
+    &:visited{
         color: $color__blue--light;
     }
 
-    &:visited{
-        color: $color__purple;
+    .cssgradients &{
+        text-decoration: none;
+        background-image: linear-gradient(
+            to top,
+            transparent $underline-height - 1,
+            currentcolor $underline-height,
+            transparent $underline-height
+        );
     }
 }

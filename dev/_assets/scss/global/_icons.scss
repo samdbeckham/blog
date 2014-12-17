@@ -3,3 +3,8 @@
     width: $ratio#{em};
     height: $ratio#{em};
 }
+
+.main-logo.main-logo{
+    background-image: none !important;
+    fill: currentcolor;
+}

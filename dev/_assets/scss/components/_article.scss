@@ -2,8 +2,7 @@
 	@extend %layout__default;
 	@extend %layout__header;
 
-	background-color: $color__red;
-	background-image: url('http://pixabay.com/get/67fd6a2132912a61d651/1417647248/iss-548328_1280.jpg?direct');
+	background-color: $color__black;
 	background-position: center bottom;
 	background-attachment: fixed;
 	background-size: cover;
