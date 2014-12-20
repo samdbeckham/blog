@@ -1,7 +1,6 @@
 ---
 layout: article
 title:  "Super Mario"
-slug: super-mario
 description: "A brief, Nintendo-flavoured article about using the Cicada principal in CSS3."
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: article
 title:  "Responsive Navigation"
-slug: responsive-navigation
 description: "A discussion about navigation ion responsive websites"
 ---
 

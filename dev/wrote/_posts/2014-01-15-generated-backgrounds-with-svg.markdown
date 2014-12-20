@@ -1,8 +1,6 @@
 ---
 layout: article
 title:  "Generated Backgrounds With SVG"
-slug: generated-backgrounds-with-svg
-custom_js: true
 description: “Playing with maths, geometry and Base64 encoded SVGs”
 ---
 
@@ -80,7 +78,7 @@ for (i = 0; i <= settings.trianglesWide; i += 1) {
 
 Gives you…
 
-<div class="demo-box" style="background-image:url('/images/articles/svg/failed-attempt.png');"></div>
+<div style="background-image:url('/images/articles/svg/failed-attempt.png');background-position:center;height:250px;margin-bottom:0.618033em"></div>
 
 As you can see, the bow-ties don’t line up quite right but this is fixable. What we need to do is offset every second row by moving it up and along by 50%. I decided to utilise the [modulo operation](http://en.wikipedia.org/wiki/Modulo_operation) `(j % 1)` to differentiate between even and odd rows. This operation will return a 0 when the number is even and a 1 when it’s odd.
 

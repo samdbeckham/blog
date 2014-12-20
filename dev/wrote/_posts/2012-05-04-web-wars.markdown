@@ -1,8 +1,6 @@
 ---
 layout: article
 title:  "Web Wars"
-slug: web-wars
-custom_js: true
 description: "Flash is dead – long live HTML5."
 ---
 

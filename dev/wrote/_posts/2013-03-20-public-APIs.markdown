@@ -1,8 +1,6 @@
 ---
 layout: article
 title:  "Public APIs"
-slug: public-apis
-custom_js: true
 description: "Millions of people share their photos, thoughts and data online - and now we can access it easily with public APIs."
 ---
 
