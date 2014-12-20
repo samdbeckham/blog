@@ -5,39 +5,18 @@
     display: none;
 }
 
-.page__web-wars{
-    .article__header{
-        background-color: #31394e;
-        background-image: url('/images/articles/web-wars/vader-bg.jpg');
+.footer{
+    background-color: $color__black;
+    color: $color__white;
+    text-align: center;
+
+    a{
+        color: $color__gray--light;
     }
 }
 
-.page__super-mario{
-    .article__header{
-        background-image: url('/images/articles/super-mario/mario-bg.jpg');
-    }
-}
-
-.page__responsive-navigation{
-    .article__header{
-        background-image: url('http://f.fastcompany.net/multisite_files/fastcompany/imagecache/inline-large/inline/2014/12/3039402-inline-i-7-the-history-of-web-design-explained-in-9-gifs07-responsive-3-copy.gif');
-        background-size: initial;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: initial;
-        background-color: #fff;
-        border-bottom: $ratio-inv#{em} solid $color__gray;
-    }
-}
-
-.page__generated-backgrounds-with-svg{
-    .article__header{
-        background-image: url('http://static.hdw.eweb4.com/media/wallpapers_1920x1080/abstract/1/1/pink-polygons-abstract-hd-wallpaper-1920x1080-4448.png');
-    }
-}
-
-.page__dont-fear-the-command-line{
-    .article__header{
-        background-image: url('http://www.themoviethemesong.com/wp-content/uploads/2014/04/The-Matrix-Theme-Song-6.jpg');
-    }
+a.disclaimer{
+    font-size: $ratio-inv#{em};
+    display: block;
+    background-image: none;
 }

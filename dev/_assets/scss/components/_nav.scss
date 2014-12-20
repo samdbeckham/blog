@@ -1,26 +1,19 @@
-.main-nav{
-    position: absolute;
-    right: $ratio-inv#{em};
-    top: $ratio-inv#{em};
+.nav{
+    margin-bottom: $ratio-inv#{em};
 
     li{
         display: inline-block;
-        font-size: $ratio-inv#{em};
+        margin: 0 $ratio-inv#{em};
     }
 
     a{
-        font-family: $alt-font;
         text-transform: uppercase;
-        color: $color__white;
-        text-decoration: none;
-        background-color: $color__gray;
-        background-color: rgba($color__black, $ratio-inv);
-        padding: $ratio-inv--2#{em} $ratio#{em};
-
-        &:hover,
-        &:focus,
-        &.active{
-            background-color: $color__black;
-        }
+        background-image: none;
     }
+}
+
+.nav--main{
+    position: absolute;
+    right: $ratio-inv#{em};
+    top: $ratio-inv#{em};
 }
