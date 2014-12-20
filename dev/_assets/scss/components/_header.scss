@@ -1,27 +1,27 @@
-.page-header{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+.page-header {
     background-color: transparent;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     transition: background-color 1s;
 
-    a{
+    a {
         color: $color__white;
     }
 
-    .wrapper{
-        padding-top: $ratio-inv#{em};
+    .wrapper {
         padding-bottom: 0;
+        padding-top: $ratio-inv#{em};
     }
 }
 
-.page-header--fixed{
-    position: fixed;
+.page-header--fixed {
     background-color: $color__white;
+    position: fixed;
     z-index: 9;
 
-    a{
+    a {
         color: $color__gray--light;
     }
 }

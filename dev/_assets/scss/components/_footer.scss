@@ -1,0 +1,15 @@
+.footer {
+    background-color: $color__black;
+    color: $color__white;
+    text-align: center;
+
+    a {
+        color: $color__gray--light;
+    }
+}
+
+.disclaimer {
+    background-image: none;
+    display: block;
+    font-size: $ratio-inv#{em};
+}
