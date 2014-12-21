@@ -33,12 +33,22 @@ pre {
     }
 
     &:after {
-        background-image: linear-gradient(to right, rgba($color__black, 0), rgba($color__black, 1));
+        background-image: linear-gradient(
+            to right,
+            rgba($color__black, 0),
+            rgba($color__black,
+            1
+        ));
         right: 0;
     }
 
     &:before {
-        background-image: linear-gradient(to left, rgba($color__black, 0), rgba($color__black, 1));
+        background-image: linear-gradient(
+            to left,
+            rgba($color__black, 0),
+            rgba($color__black,
+            1
+        ));
         left: 0;
     }
 }
