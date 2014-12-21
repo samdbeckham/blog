@@ -5,7 +5,8 @@ code {
     -webkit-font-smoothing: antialiased;
 }
 
-.highlight {
+.highlight,
+pre {
     background-color: $color__black;
     margin: $ratio#{em} 0;
     position: relative;
