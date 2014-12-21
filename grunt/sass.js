@@ -8,7 +8,8 @@ module.exports = {
             ext: '.css'
         }],
         options: {
-            style: 'compressed' 
+            style: 'expanded',
+            'line-comments': true
         }
     },
     dist: {

@@ -1,24 +1,24 @@
-%hn{
+%hn {
     font-family: $heading-font;
-    line-height: 1em;
     font-weight: 500;
+    line-height: 1em;
     margin: $ratio#{em} 0 $ratio-inv#{em};
 }
 
-h1{
+h1 {
     @extend %hn;
 
-    font-size: $ratio--2#{em};
+    font-size: pow($ratio,2)#{em};
 }
 
-h2{
+h2 {
     @extend %hn;
 
     font-size: $ratio#{em};
 }
 
 h3,
-h4{
+h4 {
     @extend %hn;
 
     font-size: 1 + (.5 * $ratio-inv)#{em};

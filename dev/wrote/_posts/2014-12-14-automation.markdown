@@ -1,7 +1,6 @@
 ---
 layout: article
 title:  Automation
-slug: automation
 ---
 
 For years I've been facinated by automation. Why waste time doing menial tasks when you can program a machine to do them for you?

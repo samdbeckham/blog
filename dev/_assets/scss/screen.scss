@@ -1,22 +1,24 @@
-@import "base/variables";
-@import "base/reset";
-@import "base/color-scheme";
-@import "base/mixins";
-@import "base/typography";
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/color-scheme';
+@import 'base/mixins';
+@import 'base/typography';
 
-@import "layout/grid";
+@import 'layout/grid';
 
-@import "global/base";
-// @import "global/forms";
-@import "global/headings";
-@import "global/icons";
-@import "global/links";
-@import "global/media";
-@import "global/paragraphs";
+@import 'global/base';
+// @import 'global/forms';
+@import 'global/headings';
+@import 'global/icons';
+@import 'global/links';
+@import 'global/media';
+@import 'global/text';
 
-@import "components/article";
-@import "components/header";
-@import "components/nav";
-@import "components/post-list";
+@import 'components/article';
+@import 'components/code-blocks';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/post-list';
 
-@import "base/shame";
+@import 'base/shame';

@@ -1,0 +1,32 @@
+.italic,
+i,
+em{
+    font-style: italic;
+}
+
+.bold,
+b,
+strong{
+    font-weight: bold;
+}
+
+.underline,
+u{
+    text-decoration: underline;
+}
+
+.strike,
+s,
+strike{
+    text-decoration: line-through;
+}
+
+p {
+    margin-bottom: $ratio-inv#{em};
+    max-width: 38em;
+
+    &:first-of-type {
+        font-size: $ratio#{em};
+        line-height: $ratio#{em};
+    }
+}

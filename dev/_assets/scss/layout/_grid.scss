@@ -7,52 +7,49 @@ $columns: (
 	d: .722
 );
 
-%layout__container{
-	width: 100%;
-	max-width: map-get($breakpoints, large);
+%layout__container {
 	margin: 0 auto;
+	max-width: map-get($breakpoints, large);
 	padding: $ratio#{em};
 	position: relative;
+	width: 100%;
 }
-.wrapper{
+
+.wrapper {
 	@extend %layout__container;
 }
 
-%layout__default{
-	width: 100%;
+%layout__default {
 	display: inline-block;
 	vertical-align: top;
+	width: 100%;
 }
 
-%layout__gutter{
-	@include breakpoint(small){
+%layout__gutter {
+	@include breakpoint(small) {
 		width: percentage( map-get($columns, a) + map-get($columns, b) );
 	}
 }
 
-%layout__content{
-	@include breakpoint(small){
-		width: percentage( map-get($columns, d) );
+%layout__content {
+	@include breakpoint(small) {
 		margin-left: percentage( map-get($columns, a) + map-get($columns, b) + map-get($columns, c) );
-	}
-}
-
-%layout__content--with-gutter{
-	@include breakpoint(small){
 		width: percentage( map-get($columns, d) );
-		margin-left: percentage( map-get($columns, c) );
 	}
 }
 
-%layout__header{
-	height: map-get($columns, d) * 100#{vh};
-	display: flex;
-	align-items: flex-end;
-	align-content: center;
-	flex-flow: row wrap;
-	width: 100%;
+%layout__content--with-gutter {
+	@include breakpoint(small) {
+		margin-left: percentage( map-get($columns, c) );
+		width: percentage( map-get($columns, d) );
+	}
 }
 
-code{
-	display: none;
+%layout__header {
+	align-content: center;
+	align-items: flex-end;
+	display: flex;
+	flex-flow: row wrap;
+	height: map-get($columns, d) * 100#{vh};
+	width: 100%;
 }

@@ -1,7 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
 
 $body-font: 'Helvetica Neue', Helvetica, sans-serif;
-$alt-font: 'Droid Serif', times, serif;
 $code-font: 'Droid Sans Mono', 'consolas', 'monaco', 'courier', monospaced;
 
 $heading-font: $body-font;
@@ -10,13 +9,13 @@ $line-height: 1.8em;
 $font-weight: 300;
 $font-size: 14;
 
-html{
+html {
 	font-family: $body-font;
-	line-height: $line-height;
 	font-size: $font-size#{px};
 	font-weight: $font-weight;
+    line-height: $line-height;
 
-	@include breakpoint(medium){
+	@include breakpoint(medium) {
 		font-size: 1.2 * $font-size#{px};
 	}
 }

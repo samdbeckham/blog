@@ -1,9 +1,0 @@
-p{
-    margin-bottom: $ratio-inv#{em};
-    max-width: 38em;
-
-    &:first-of-type{
-        font-size: $ratio#{em};
-        line-height: $ratio#{em};
-    }
-}

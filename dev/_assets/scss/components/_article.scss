@@ -1,33 +1,33 @@
-.article__header{
+.article__header {
 	@extend %layout__default;
 	@extend %layout__header;
 
+	background-attachment: fixed;
 	background-color: $color__black;
 	background-position: center bottom;
-	background-attachment: fixed;
-	background-size: cover;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.article__header__headings{
+.article__header__headings {
 	@extend %layout__default;
 	@extend %layout__content;
 
 	background-color: $color__white;
 	padding: $ratio-inv#{em};
 
-	h1{
+	h1 {
 		margin: 0;
 	}
 }
 
-.article__content{
+.article__content {
 	@extend %layout__default;
 	@extend %layout__content;
 
     color: $color__gray;
 
-	img{
+	img {
 		background-color: $color__gray;
 		display: block;
 	}
