@@ -1,0 +1,40 @@
+---
+layout: article
+title:  "Web Wars"
+description: "Flash is dead – long live HTML5."
+---
+
+A long time ago in a galaxy far, far away…
+
+If you wanted interactivity on a website that went beyond scrolling marquees, blinking text and hover states - you had to use Flash. However, Flash was not without its faults.
+
+A New hope
+----------
+
+Now there are a number of alternatives to Flash. HTML5 is the latest to step up to the plate.
+
+The HTML5 Vs Flash debate has gone on for some time now. A web search for “HTML5 vs Flash” will bring up thousands of results, some in favour of Flash and some for HTML5.
+
+A lot of people fear the arrival of HTML5, but fear is the path to the dark side. We should embrace new technologies. HTML5 has a very good community that will happily help you out. I believe sharing our knowledge is a wonderful thing and is the key to [moving the web forward][].
+
+Of course nothing is perfect - HTML5 has its faults as well. But it is still in its infancy and will continue to grow.
+
+The Empire Strike back
+----------------------
+
+In [April 2010][] Adobe were dealt a large blow to their battle for web supremacy, as tech giants Apple announced that their mobile operating system wouldn't support Flash and would instead favour HTML5. Since that announcement the iPhone user base has grown exponentially and the iPad - using a similar OS - has dominated the tablet market. That means a lot of people can't use Flash on-the-go.
+
+Web developers have realised this and have started to move away from Flash in favour of HTML5. Flash may still be used on around half of the world's top websites but this figure is dropping quickly.
+
+Return of the Jedi
+------------------
+
+There are still a lot of developers that favour Flash. They know it works and it can still do a lot of things that HTML5 can't, yet.
+
+If you've only used Flash I would suggest learning HTML5 as soon as you can, as Flash may not be around forever. As a great Jedi once said,["Always in motion is the future."][]
+
+[moving the web forward]: http://movethewebforward.org/ "Contribute to the web"
+
+[April 2010]: http://www.apple.com/hotnews/thoughts-on-flash/ "Apple's thoughts on Flash"
+
+["Always in motion is the future."]: http://youtu.be/3A_uOaA3e_0#t=13m56s "Yoda's training"
