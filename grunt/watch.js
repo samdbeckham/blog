@@ -18,7 +18,10 @@ module.exports = {
     jekyll: {
         files: [
             'dev/{,*/_posts/}*.{md,markdown}',
-            'dev/{,_layouts/,_includes/}*.html',
+            'dev/_layouts/*.html',
+            'dev/_includes/*.html',
+            'dev/made/*.html',
+            'dev/wrote/*.html',
             'dev/_plugins/{,*/}*.rb'
         ],
         tasks: [
