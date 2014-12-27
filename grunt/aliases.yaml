@@ -12,6 +12,7 @@ serve:
 
 build:
  - 'clean:dist'
+ - 'scsslint'
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'

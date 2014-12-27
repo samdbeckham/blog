@@ -1,0 +1,7 @@
+linters:
+    NameFormat:
+        convention: '[a-z]+(((__)|(--?))[a-z]+)*'
+    SelectorFormat:
+        convention: '[a-z]+(((__)|(--?))[a-z]+)*'
+    Indentation:
+        width: 4

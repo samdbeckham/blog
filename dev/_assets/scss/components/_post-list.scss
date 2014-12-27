@@ -1,29 +1,29 @@
 .post-list__header {
-	@extend %layout__default;
-	@extend %layout__header;
+    @extend %layout__default;
+    @extend %layout__header;
 
-	background-color: $color__gray--light;
+    background-color: $color__gray--light;
 }
 
 .post-list__content {
-	padding: $ratio-inv#{em};
+    padding: $ratio-inv#{em};
 }
 
 .post-list__button {
-	@extend %layout__default;
-	@extend %layout__gutter;
+    @extend %layout__default;
+    @extend %layout__gutter;
 }
 
 .post-list__title {
-	@extend %layout__default;
-	@extend %layout__content--with-gutter;
+    @extend %layout__default;
+    @extend %layout__content--with-gutter;
 
-	h2,
-	h3 {
-		margin: 0;
-	}
+    h2,
+    h3 {
+        margin: 0;
+    }
 
-	h3 {
-		color: $color__white;
-	}
+    h3 {
+        color: $color__white;
+    }
 }

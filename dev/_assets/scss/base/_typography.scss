@@ -10,12 +10,12 @@ $font-weight: 300;
 $font-size: 14;
 
 html {
-	font-family: $body-font;
-	font-size: $font-size#{px};
-	font-weight: $font-weight;
+    font-family: $body-font;
+    font-size: $font-size#{px};
+    font-weight: $font-weight;
     line-height: $line-height;
 
-	@include breakpoint(medium) {
-		font-size: 1.2 * $font-size#{px};
-	}
+    @include breakpoint(medium) {
+        font-size: 1.2 * $font-size#{px};
+    }
 }
