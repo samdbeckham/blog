@@ -1,31 +1,31 @@
 $color__black: #31394e;
-$color__white: #ffffff;
+$color__white: #fff;
 
 $color__gray: #5d5d66;
 $color__gray--light: #999;
 
 // Colors
 
-$color__red: #EF4836;
+$color__red: #ef4836;
 $color__red--light: lighten($color__red, 12%);
 $color__red--dark: darken($color__red, 12%);
 
-$color__orange: #EB9532;
+$color__orange: #eb9532;
 $color__orange--light: lighten($color__orange, 12%);
 $orange--dark: darken($color__orange, 12%);
 
-$color__yellow: #F4D03F;
+$color__yellow: #f4d03f;
 $color__yellow--light: lighten($color__yellow, 12%);
 $color__yellow--dark: darken($color__yellow, 12%);
 
-$color__green: #1BBC9B;
+$color__green: #1bbc9c;
 $color__green--light: lighten($color__green, 12%);
 $color__green--dark: darken($color__green, 12%);
 
-$color__blue: #3498DB;
+$color__blue: #3498db;
 $color__blue--light: lighten($color__blue, 12%);
 $color__blue--dark: darken($color__blue, 12%);
 
-$color__purple: #8E44AD;
+$color__purple: #8e44ad;
 $color__purple--light: lighten($color__purple, 12%);
 $color__purple--dark: darken($color__purple, 12%);
