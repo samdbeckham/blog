@@ -7,6 +7,7 @@ serve:
  - 'jekyll:dev'
  - 'sass:dev'
  - 'autoprefixer:dev'
+ - 'imagemin:dev'
  - 'connect'
  - 'watch'
 
@@ -16,4 +17,5 @@ build:
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'
+ - 'imagemin:dev'
  - 'htmlmin'
