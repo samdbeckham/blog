@@ -3,7 +3,28 @@ layout: default
 ---
 
 <article class="article">
-    <header class="article__header" {% if page.image %}style="background-image:url('{{ page.image }}');"{% endif %}>
+    <header class="article__header"
+        {% if page.background %}
+            style="
+                {% if page.background.image %}
+                    background-image: url('{{ page.background.image }}');
+                {% endif %}
+                {% if page.background.color %}
+                    background-color: {{ page.background.color }};
+                {% endif %}
+                {% if page.background.size %}
+                    background-size: {{ page.background.size }};
+                {% endif %}
+                {% if page.background.position %}
+                    {% if page.background.position == 'center' %}
+                        background-position: center 31%;
+                    {% else %}
+                        background-position: {{ page.background.position }};
+                    {% endif %}
+                {% endif %}
+            "
+        {% endif %}
+    >
     	<div class="wrapper">
             <div class="article__header__headings">
     	        <h1>{{ page.title }}</h1>
