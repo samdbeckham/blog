@@ -1,6 +1,7 @@
 ---
 layout: article
 title:  Automation
+image: http://upload.wikimedia.org/wikipedia/commons/0/08/Piers_Sellers_spacewalk.jpg
 ---
 
 For years I've been facinated by automation. Why waste time doing menial tasks when you can program a machine to do them for you?
