@@ -6,11 +6,6 @@
     background-color: $color__black;
     background-position: center percentage($ratio-inv / 2);
     background-repeat: no-repeat;
-    background-size: 90%;
-
-    @include breakpoint(small) {
-        background-size: auto;
-    }
 }
 
 .article__header__headings {
