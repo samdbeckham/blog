@@ -19,3 +19,9 @@ build:
  - 'autoprefixer:dist'
  - 'imagemin:dev'
  - 'htmlmin'
+
+regenerate:
+ - 'jekyll:dev'
+ - 'sass:dev'
+ - 'autoprefixer:dev'
+ - 'imagemin:dev'

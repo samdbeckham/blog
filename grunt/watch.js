@@ -6,14 +6,13 @@ module.exports = {
         files: 'dev/_assets/scss/{,*/,*/*/}*.scss',
         tasks: ['sass:dev','autoprefixer:dev'],
     },
+    images: {
+        files: 'dev/_assets/images/**/*.{jpg,gif,png}',
+        tasks: 'imagemin:dev'
+    },
     svg: {
         files: 'dev/_assets/svg/{,*/}*.svg',
-        tasks: [
-            'svgstore',
-            'jekyll:dev',
-            'sass:dev',
-            'autoprefixer:dev'
-        ],
+        tasks: ['svgstore','regenerate'],
     },
     jekyll: {
         files: [
@@ -24,14 +23,10 @@ module.exports = {
             'dev/wrote/*.html',
             'dev/_plugins/{,*/}*.rb'
         ],
-        tasks: [
-            'jekyll:dev',
-            'sass:dev',
-            'autoprefixer:dev'
-        ],
+        tasks: ['regenerate'],
     },
     configFiles: {
-        files: [ 'Gruntfile.js', 'grunt/*.{js,yaml}' ],
+        files: ['Gruntfile.js', 'grunt/*.{js,yaml}'],
         options: {
             reload: true
         }

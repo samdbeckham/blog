@@ -21,7 +21,7 @@ module.exports = {
             {
                 expand: true,
                 dot: true,
-                cwd: '_assets/images',
+                cwd: 'dev/_assets/images',
                 dest:'web/images',
                 src: ['**/*.{jpg,gif,png}']
             }
