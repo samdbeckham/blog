@@ -7,7 +7,7 @@ module.exports = {
         tasks: ['sass:dev','autoprefixer:dev'],
     },
     images: {
-        files: 'dev/_assets/images/**/*.{jpg,gif,png}',
+        files: 'dev/_assets/images/**/*.{jpg,gif,png,svg}',
         tasks: 'imagemin:dev'
     },
     svg: {

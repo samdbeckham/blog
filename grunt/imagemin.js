@@ -9,7 +9,7 @@ module.exports = {
                 dot: true,
                 cwd: 'dev/_assets/images',
                 dest:'.tmp/images',
-                src: ['**/*.{jpg,gif,png}']
+                src: ['**/*.{jpg,gif,png,svg}']
             }
         ]
     },
@@ -23,7 +23,7 @@ module.exports = {
                 dot: true,
                 cwd: 'dev/_assets/images',
                 dest:'web/images',
-                src: ['**/*.{jpg,gif,png}']
+                src: ['**/*.{jpg,gif,png,svg}']
             }
         ]
     }

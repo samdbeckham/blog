@@ -3,7 +3,7 @@ layout: article
 title:  Automation
 background:
   image: http://import.jekyllrb.com/img/octojekyll.png
-  color: '#c0392b'
+  color: '#31394e'
 ---
 
 For years I've been facinated by automation. Why waste time doing menial tasks when you can program a machine to do them for you?

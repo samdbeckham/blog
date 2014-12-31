@@ -2,6 +2,8 @@
 layout: article
 title:  "Web Wars"
 description: "Flash is dead – long live HTML5."
+background:
+  image: /images/articles/web-wars/r2d2.svg
 ---
 
 A long time ago in a galaxy far, far away…
