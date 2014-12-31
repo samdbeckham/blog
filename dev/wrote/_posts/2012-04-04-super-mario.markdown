@@ -3,7 +3,7 @@ layout: article
 title:  "Super Mario"
 description: "A brief, Nintendo-flavoured article about using the Cicada principal in CSS3."
 background:
-  image: /images/articles/super-mario/flower.svg
+  image: /images/articles/super-mario/background.svg
   color: '#c0392b'
 ---
 
