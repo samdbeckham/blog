@@ -2,6 +2,9 @@
 layout: article
 title:  "Responsive Navigation"
 description: "A discussion about navigation ion responsive websites"
+background:
+  image: /images/articles/responsive-navigation/hero-animation.gif
+  color: '#eb9532'
 ---
 
 Recently I’ve been coming across the same problem with website navigation. People seem to want to put links to 25+ pages in the main navigation area and finding ways to make them fit is becoming a chore.
