@@ -4,9 +4,13 @@
 
     background-attachment: fixed;
     background-color: $color__black;
-    background-position: center bottom;
+    background-position: center percentage($ratio-inv / 2);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+
+    @include breakpoint(small) {
+        background-size: auto;
+    }
 }
 
 .article__header__headings {

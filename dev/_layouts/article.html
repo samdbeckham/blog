@@ -12,16 +12,6 @@ layout: default
                 {% if page.background.color %}
                     background-color: {{ page.background.color }};
                 {% endif %}
-                {% if page.background.size %}
-                    background-size: {{ page.background.size }};
-                {% endif %}
-                {% if page.background.position %}
-                    {% if page.background.position == 'center' %}
-                        background-position: center 31%;
-                    {% else %}
-                        background-position: {{ page.background.position }};
-                    {% endif %}
-                {% endif %}
             "
         {% endif %}
     >
