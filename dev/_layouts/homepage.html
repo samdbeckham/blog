@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{% assign work = site.posts | where:'dir', '/made' %}
+{% assign articles = site.posts | where:'dir', '/wrote' %}
+
+<article class="article">
+    <header class="article__header">
+    	<div class="wrapper">
+            <div class="article__header__headings">
+    	        <h1>{{ page.title }}</h1>
+    	        <span class="page__date--header">{{ page.date | date: "%-d %B %Y" }}</span>
+            </div>
+	    </div>
+    </header>
+	<div class="wrapper">
+    	<div class="article__content">
+	    	{{ content }}
+	    </div>
+        <h2>Work</h2>
+        <ul>
+            {% for post in work %}
+                <li class="post-list__content">
+                    <div class="wrapper">
+                        <a href="{{ post.url }}" class="post-list__button button">Read post</a>
+                        <div class="post-list__title">
+                            <h2>{{ post.title }}</h2>
+                            <h3>{{ post.client }}</h3>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <h2>Articles</h2>
+        <ul>
+            {% for post in articles %}
+                <li class="post-list__content">
+                    <div class="wrapper">
+                        <a href="{{ post.url }}" class="post-list__button button">Read post</a>
+                        <div class="post-list__title">
+                            <h2>{{ post.title }}</h2>
+                            <h3>{{ post.date | date: "%-d %B %Y" }}</h3>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</article>
