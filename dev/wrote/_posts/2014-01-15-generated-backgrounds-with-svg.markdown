@@ -2,6 +2,9 @@
 layout: article
 title:  "Generated Backgrounds With SVG"
 description: “Playing with maths, geometry and Base64 encoded SVGs”
+background:
+  image: /images/articles/svg/background.svg
+  color: '#16a085'
 ---
 
 Just before Christmas I decided to have a play about with SVG on Codepen. It got quite a lot of attention and I was asked to write a post detailing the process; here is that post.
@@ -122,3 +125,6 @@ This shouldn’t need too much of an explanation, it returns a random entry from
 Plugin
 ----------
 Whilst this is not intended to be a jQuery plugin, I wrote it in that manner to allow me to generate several different backgrounds. Have a play about with the settings at the [top of the page](#top) or check out the demo on [Codepen](http://codepen.io/sambeckham/pen/FCGrx) to see just how versatile this can be.
+
+
+<style>.article__header{background-size:cover;}</style>

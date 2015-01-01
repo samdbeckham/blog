@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" width="100" height="100" fill="#27ae60">
+    <rect width="20" height="100" x="40" y="0"/>
+
+    <animate id="fadeIn"
+             attributeName="opacity"
+             from="0" to="1" dur="0.4s"
+             begin="0s;fadeOut.end" />
+    <animate id="fadeOut"
+             attributeName="opacity"
+             from="1" to="0" dur="0.4s"
+             begin="fadeIn.end + 1" />
+</svg>

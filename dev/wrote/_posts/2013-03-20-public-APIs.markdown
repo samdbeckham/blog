@@ -2,6 +2,9 @@
 layout: article
 title:  "Public APIs"
 description: "Millions of people share their photos, thoughts and data online - and now we can access it easily with public APIs."
+background:
+  image: /images/articles/public-apis/background.svg
+  color: '#3498db'
 ---
 
 Millions of people share their photos, thoughts and data online - and now we can access it easily with public APIs.
