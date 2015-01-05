@@ -1,13 +1,10 @@
 default:
- - serve
+ - 'serve'
 
 serve:
  - 'clean:server'
  - 'svgstore'
- - 'jekyll:dev'
- - 'sass:dev'
- - 'autoprefixer:dev'
- - 'imagemin:dev'
+ - 'regenerate'
  - 'connect'
  - 'watch'
 

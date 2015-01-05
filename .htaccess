@@ -4,6 +4,4 @@ permalink: .htaccess
 ---
 
 ErrorDocument 404 /404.html
-Redirect /contact /
-Redirect /work /
 Redirect /articles/* /wrote/*

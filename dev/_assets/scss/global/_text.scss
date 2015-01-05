@@ -22,7 +22,7 @@ strike {
 }
 
 p {
-    margin-bottom: $ratio-inv#{em};
+    margin-bottom: $ratio--inv#{em};
     max-width: 38em;
 
     &:first-of-type {

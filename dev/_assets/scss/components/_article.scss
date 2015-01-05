@@ -4,7 +4,7 @@
 
     background-attachment: fixed;
     background-color: $color__black;
-    background-position: center percentage($ratio-inv / 2);
+    background-position: center percentage($ratio--inv / 2);
     background-repeat: no-repeat;
 }
 
@@ -13,7 +13,7 @@
     @extend %layout__content;
 
     background-color: $color__white;
-    padding: $ratio-inv#{em};
+    padding: $ratio--inv#{em};
 
     h1 {
         margin: 0;
@@ -27,7 +27,7 @@
     color: $color__gray;
 
     img {
-        background-color: $color__gray;
+        background-color: $color__gray--light;
         display: block;
     }
 }
