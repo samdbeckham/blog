@@ -1,1 +1,42 @@
 // This is the shame file. It is meant to be used solely as a sandbox.
+
+.card{
+    display: block;
+    background-color: #ddd;
+    height: 0;
+    padding-bottom: percentage($ratio);
+    overflow: hidden;
+    position: relative;
+    background-color: $color__black;
+}
+
+.card__image{
+    position: absolute;
+    top: $ratio--inv#{em};
+    right: $ratio--inv#{em};
+    left: $ratio--inv#{em};
+    width: calc(100% - 1.236066em);
+}
+
+.card__title{
+    display: block;
+    background-color: $color__gray--light;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $ratio--inv#{em};
+    color: $color__black;
+    min-height: percentage(1 - $ratio--inv);
+
+    h2{
+        line-height: 1em;
+        margin: 0;
+    }
+
+    h3 {
+        line-height: $ratio#{em};
+        margin-top: $ratio--inv#{em};
+        font-size: 1em;
+    }
+}

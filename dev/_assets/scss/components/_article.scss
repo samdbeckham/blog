@@ -24,7 +24,7 @@
     @extend %layout__default;
     @extend %layout__content;
 
-    color: $color__gray;
+    color: $color__gray--dark;
 
     img {
         background-color: $color__gray--light;

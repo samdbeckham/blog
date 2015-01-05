@@ -1,29 +1,22 @@
 .post-list__header {
-    @extend %layout__default;
-    @extend %layout__header;
+    // @extend %layout__default;
+    // @extend %layout__header;
 
-    background-color: $color__gray--light;
+    background-color: $color__gray;
 }
 
-.post-list__content {
+.post-list__item{
+    display: inline-block;
     padding: $ratio--inv#{em};
-}
 
-.post-list__button {
-    @extend %layout__default;
-    @extend %layout__gutter;
-}
+    width: percentage(1/2);
 
-.post-list__title {
-    @extend %layout__default;
-    @extend %layout__content--with-gutter;
-
-    h2,
-    h3 {
-        margin: 0;
+    @include breakpoint(small) {
+        width: percentage(1/3);
     }
-
-    h3 {
-        color: $color__white;
+    @include breakpoint(medium) {
+        width: percentage(1/4);
     }
 }
+
+

@@ -1,9 +1,22 @@
 module.exports = {
+    options: {
+        collapseWhitespace: true,
+        removeIgnored: true
+    },
+    dev: {
+        files: [
+            {
+                expand: true,
+                dot: true,
+                cwd: '.tmp/',
+                dest:'.tmp/',
+                src: ['**/*.html']
+            }
+        ]
+    },
     dist: {
         options: {
-            collapseWhitespace: true,
             removeComments: true,
-            removeIgnored: true
         },
         files: [
             {

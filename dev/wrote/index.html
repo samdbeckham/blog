@@ -12,16 +12,16 @@ title: Stuff I wrote
 	        <h2>Blog posts and the like.</h2>
 	    </div>
     </header>
-	<ul>
+	<ul class="wrapper post-list__list">
     	{% for post in posts %}
-			<li class="post-list__content">
-				<div class="wrapper">
-					<a href="{{ post.url }}" class="post-list__button button">Read post</a>
-					<div class="post-list__title">
-						<h2>{{ post.title }}</h2>
-						<h3>{{ post.date | date: "%-d %B %Y" }}</h3>
-					</div>
-				</div>
+			<li class="post-list__item">
+				<a href="{{ post.url }}" class="card" style="background-color:{{ post.background.color }}">
+                    <img src="{{ post.background.image }}" class="card__image" alt="">
+                    <div class="card__title">
+                        <h2>{{ post.title }}</h2>
+                        <h3>{{ post.date | date: "%-d %B %Y" }}</h3>
+                    </div>
+				</a>
 			</li>
     	{% endfor %}
     </ul>
