@@ -1,4 +1,5 @@
 name: Sam Beckham
 markdown: kramdown
+permalink: /:categories/:title
 exclude: ['config', 'README.md']
 include: ['.htaccess']
