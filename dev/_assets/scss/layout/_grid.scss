@@ -1,5 +1,3 @@
-// grid
-
 $columns: (
     a: .102,
     b: .115,
@@ -13,10 +11,6 @@ $columns: (
     padding: $ratio#{em};
     position: relative;
     width: 100%;
-}
-
-.wrapper {
-    @extend %layout__container;
 }
 
 %layout__default {
@@ -52,4 +46,8 @@ $columns: (
     flex-flow: row wrap;
     height: map-get($columns, d) * 100#{vh};
     width: 100%;
+}
+
+.wrapper {
+    @extend %layout__container;
 }

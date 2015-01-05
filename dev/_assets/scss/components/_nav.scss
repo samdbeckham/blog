@@ -1,9 +1,9 @@
 .nav {
-    margin-bottom: $ratio-inv#{em};
+    margin-bottom: $ratio--inv#{em};
 
     li {
         display: inline-block;
-        margin: 0 $ratio-inv#{em};
+        margin: 0 $ratio--inv#{em};
     }
 
     a {
@@ -14,6 +14,6 @@
 
 .nav--main {
     position: absolute;
-    right: $ratio-inv#{em};
-    top: $ratio-inv#{em};
+    right: $ratio--inv#{em};
+    top: $ratio--inv#{em};
 }
