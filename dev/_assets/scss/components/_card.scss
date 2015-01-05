@@ -1,0 +1,33 @@
+.card {
+    background-color: $color__black;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: percentage($ratio);
+    position: relative;
+}
+
+.card__image {
+    left: $ratio--inv#{em};
+    position: absolute;
+    right: $ratio--inv#{em};
+    top: $ratio--inv#{em};
+    width: calc(100% - 1.236066em);
+}
+
+.card__title {
+    background-color: $color__gray--light;
+    bottom: 0;
+    color: $color__black;
+    display: block;
+    left: 0;
+    min-height: percentage(1 - $ratio--inv);
+    padding: $ratio--inv#{em};
+    position: absolute;
+    right: 0;
+
+    h2 {
+        line-height: 1em;
+        margin: 0;
+    }
+}
