@@ -1,10 +1,9 @@
 module.exports = {
-    dist: { 
+    dist: {
         options: {
             collapseWhitespace: true,
             removeComments: true,
-            removeIgnored: true,
-            // lint: true,
+            removeIgnored: true
         },
         files: [
             {
