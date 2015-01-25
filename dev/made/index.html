@@ -7,25 +7,31 @@ title: Stuff I made
 {% if posts == empty %}
     <div class="nothing-to-see"></div>
 {% else %}
-    <section class="post-list">
-        <header class="post-list__header">
-        	<div class="wrapper">
-    	        <h1>{{ page.title }}</h1>
-    	        <h2>A portfolio of sorts.</h2>
-    	    </div>
+    <section class="page post-list">
+        <header class="page__header">
+            <div class="wrapper">
+                <div class="page__header__headings">
+                    <h1>{{ page.title }}</h1>
+                    <span>A portfolio of sorts.</span>
+                </div>
+            </div>
         </header>
-    	<ul>
-        	{% for post in posts %}
-    			<li class="post-list__content">
-    				<div class="wrapper">
-    					<a href="{{ post.url }}" class="post-list__button button">Read post</a>
-    					<div class="post-list__title">
-    						<h2>{{ post.title }}</h2>
-    						<em>{{ post.date | date: "%-d %B %Y" }}</em>
-    					</div>
-    				</div>
-    			</li>
-        	{% endfor %}
-        </ul>
+        <div class="wrapper">
+            <div class="page__content">
+                <ul class="post-list__list">
+                    {% for post in posts %}
+                        <li class="post-list__item">
+                            <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
+                                <div class="card__title">
+                                    <h3>{{ post.title }}</h3>
+                                    <em>{{ post.client }}</em>
+                                    <p>{{ post.excerpt | strip_html }}</p>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </section>
 {% endif %}

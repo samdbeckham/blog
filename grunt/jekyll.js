@@ -10,7 +10,7 @@ module.exports = {
     dev: {
         options: {
             dest: '.tmp',
-            drafts: false,
+            drafts: true,
             future: true
         }
     }
