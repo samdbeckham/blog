@@ -20,7 +20,7 @@ layout: default
             {% if work != empty %}
                 <h2>Work</h2>
                 <ul>
-                    {% for post in work %}
+                    {% for post in work | limit: 4 %}
                         <li class="post-list__item">
                             <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
                                 <div class="card__title">
@@ -36,7 +36,7 @@ layout: default
             {% if articles != empty %}
                 <h2>Articles</h2>
                 <ul>
-                    {% for post in articles %}
+                    {% for post in articles | limit: 4 %}
                         <li class="post-list__item">
                             <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
                                 <div class="card__title">

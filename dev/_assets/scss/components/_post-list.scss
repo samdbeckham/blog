@@ -7,7 +7,7 @@
     padding: $ratio--inv#{em};
     width: percentage(1/2);
 
-    @include breakpoint(small) {
+    @include breakpoint(extra-small) {
         width: percentage(1/3);
     }
 
