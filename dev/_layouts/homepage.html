@@ -5,17 +5,17 @@ layout: default
 {% assign work = site.posts | where:'dir', '/made' %}
 {% assign articles = site.posts | where:'dir', '/wrote' %}
 
-<article class="article">
-    <header class="article__header">
+<article class="page">
+    <header class="page__header">
     	<div class="wrapper">
-            <div class="article__header__headings">
+            <div class="page__header__headings">
     	        <h1>{{ page.title }}</h1>
     	        <span class="page__date--header">{{ page.date | date: "%-d %B %Y" }}</span>
             </div>
 	    </div>
     </header>
 	<div class="wrapper">
-    	<div class="article__content">
+    	<div class="page__content">
 	    	{{ content }}
 
             <h2>Work</h2>

@@ -5,24 +5,30 @@ title: Stuff I wrote
 
 {% assign posts = site.posts | where:'dir', '/wrote' %}
 
-<section class="post-list">
-    <header class="post-list__header">
+<section class="page post-list">
+    <header class="page__header">
     	<div class="wrapper">
-	        <h1>{{ page.title }}</h1>
-	        <h2>Blog posts and the like.</h2>
+            <div class="page__header__headings">
+    	        <h1>{{ page.title }}</h1>
+    	        <span>Blog posts and the like.</span>
+            </div>
 	    </div>
     </header>
-	<ul class="wrapper post-list__list">
-    	{% for post in posts %}
-			<li class="post-list__item">
-				<a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
-                    <div class="card__title">
-                        <h2>{{ post.title }}</h2>
-                        <em>{{ post.date | date: "%-d %B %Y" }}</em>
-                        <p>{{ post.excerpt | strip_html }}</p>
-                    </div>
-				</a>
-			</li>
-    	{% endfor %}
-    </ul>
+    <div class="wrapper">
+        <div class="page__content">
+        	<ul class="post-list__list">
+            	{% for post in posts %}
+        			<li class="post-list__item">
+        				<a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
+                            <div class="card__title">
+                                <h3>{{ post.title }}</h3>
+                                <em>{{ post.date | date: "%-d %B %Y" }}</em>
+                                <p>{{ post.excerpt | strip_html }}</p>
+                            </div>
+        				</a>
+        			</li>
+            	{% endfor %}
+            </ul>
+        </div>
+    </div>
 </section>

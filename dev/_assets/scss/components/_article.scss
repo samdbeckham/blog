@@ -1,4 +1,4 @@
-.article__header {
+.page__header {
     @extend %layout__default;
     @extend %layout__header;
 
@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
 }
 
-.article__header__headings {
+.page__header__headings {
     @extend %layout__default;
     @extend %layout__content;
 
@@ -20,7 +20,7 @@
     }
 }
 
-.article__content {
+.page__content {
     @extend %layout__default;
     @extend %layout__content;
 

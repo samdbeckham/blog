@@ -18,7 +18,7 @@
         <title>Sam Beckham{% if page.title %} | {{ page.title }}{% endif %}</title>
     </head>
 
-    <body{% if page.slug %} class="page__{{ page.slug }}"{% endif %}>
+    <body {% if page.slug %}class="page__{{ page.slug }}"{% endif %}>
         <div class="hide">{% include icon-sprite.svg %}</div>
         {{ content }}
     </body>
