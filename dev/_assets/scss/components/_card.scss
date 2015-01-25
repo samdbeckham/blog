@@ -1,0 +1,48 @@
+.card {
+    background-color: $color__black;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: percentage($ratio);
+    position: relative;
+}
+
+.card__title {
+    background-color: $color__white;
+    bottom: 0;
+    color: $color__gray--dark;
+    display: block;
+    height: percentage(1 - $ratio--inv);
+    left: 0;
+    padding: $ratio--inv#{em};
+    position: absolute;
+    right: 0;
+    transition: height .4s;
+
+    &:after {
+        background-image: linear-gradient(to top, $color__white, rgba($color__white, 0));
+        bottom: 0;
+        content: '';
+        display: block;
+        height: pow($ratio, 2)#{em};
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+
+    .card:hover & {
+        height: percentage($ratio--inv);
+    }
+
+    h2,
+    h3 {
+        line-height: 1em;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.4em;
+    }
+}

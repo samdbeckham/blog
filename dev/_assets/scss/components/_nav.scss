@@ -1,0 +1,19 @@
+.nav {
+    margin-bottom: $ratio--inv#{em};
+
+    li {
+        display: inline-block;
+        margin: 0 $ratio--inv#{em};
+    }
+
+    a {
+        background-image: none;
+        text-transform: uppercase;
+    }
+}
+
+.nav--main {
+    position: absolute;
+    right: $ratio--inv#{em};
+    top: $ratio--inv#{em};
+}

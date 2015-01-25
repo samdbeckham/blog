@@ -1,23 +1,34 @@
 module.exports = {
-	options: {
-		livereload: true
-	},
-	styles: {
-		files: 'dev/_assets/scss/{,*/}*.scss',
-		tasks: ['sass:dev', 'jekyll:dev'],
-	},
-	posts: {
-		files: 'dev/**/*.{md,markdown}',
-		tasks: ['copy:dev', 'jekyll:dev'],
-	},
-	templates: {
-		files: 'dev/**/*.html',
-		tasks: ['copy:dev', 'jekyll:dev'],
-	},
-	configFiles: {
-		files: [ 'Gruntfile.js', 'grunt/*.{js,yaml}' ],
-		options: {
-			reload: true
-		}
-	},
+    options: {
+        livereload: true
+    },
+    styles: {
+        files: 'dev/_assets/scss/{,*/,*/*/}*.scss',
+        tasks: ['sass:dev','autoprefixer:dev'],
+    },
+    images: {
+        files: 'dev/_assets/images/**/*.{jpg,gif,png,svg}',
+        tasks: 'imagemin:dev'
+    },
+    svg: {
+        files: 'dev/_assets/svg/{,*/}*.svg',
+        tasks: ['svgstore','regenerate'],
+    },
+    jekyll: {
+        files: [
+            'dev/{,*/_posts/}*.{md,markdown}',
+            'dev/_layouts/*.html',
+            'dev/_includes/*.html',
+            'dev/made/*.html',
+            'dev/wrote/*.html',
+            'dev/_plugins/{,*/}*.rb'
+        ],
+        tasks: ['regenerate'],
+    },
+    configFiles: {
+        files: ['Gruntfile.js', 'grunt/*.{js,yaml}'],
+        options: {
+            reload: true
+        }
+    }
 };

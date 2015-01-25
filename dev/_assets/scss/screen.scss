@@ -1,16 +1,24 @@
-@import "reset";
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/color-scheme';
+@import 'base/mixins';
+@import 'base/typography';
 
-@import "mixins/breakpoints";
-@import "mixins/placeholders";
+@import 'layout/grid';
 
-@import "base/variables";
-@import "base/typography";
-@import "base/color-scheme";
-@import "base/main";
+@import 'global/base';
+@import 'global/headings';
+@import 'global/icons';
+@import 'global/links';
+@import 'global/media';
+@import 'global/text';
 
-@import "layout/grid";
+@import 'components/article';
+@import 'components/card';
+@import 'components/code-blocks';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/post-list';
 
-@import "patterns/article";
-@import "patterns/post-list";
-
-@import "shame";
+@import 'base/shame';

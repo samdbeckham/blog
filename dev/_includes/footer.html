@@ -1,8 +1,14 @@
-<footer class="main">
+<footer class="footer" {% if page.background %}style="background: {{ page.background }}"{% endif %}>
     <div class="wrapper">
-        <h3>Get in touch</h3>
-        <a href="mailto:sam@sambeckhamdesign.com" title="email me">sam@sambeckhamdesign.com</a>
+        <a href="/" class="main-logo" title="home">
+            <svg viewBox="0 0 100 100" class="icon icon__logo">
+                <use xlink:href="#icon__logo"></use>
+            </svg>
+        </a>
+        <nav class="nav nav--footer">
+            {% include nav.html %}
+        </nav>
         {% include social-links.html %}
-        <a class="disclaimer" href="/"><small>&copy; 2013 Sam Beckham</small></a>
+        <a class="disclaimer" href="/"><small>&copy; {{ site.time | date: '%Y' }} Sam Beckham</small></a>
     </div>
 </footer>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if page.description %}
+            <meta name="description" content="{{ page.description }}">
+        {% endif %}
+
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <!-- <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" /> -->
+
+        <!-- build:js /scripts/vendor/modernizr.js -->
+            <script src="/../bower_components/modernizr/modernizr.js"></script>
+        <!-- /build -->
+
+        <title>Sam Beckham{% if page.title %} | {{ page.title }}{% endif %}</title>
+    </head>
+
+    <body {% if page.slug %}class="page__{{ page.slug }}"{% endif %}>
+        <div class="hide">{% include icon-sprite.svg %}</div>
+        {{ content }}
+    </body>
+</html>

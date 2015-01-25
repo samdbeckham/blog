@@ -1,7 +1,25 @@
 default:
- - 'sass:dev'
- - 'copy:dev'
- - 'jekyll:dev'
- - 'htmlmin:dev'
- - 'connect:dev'
+ - 'serve'
+
+serve:
+ - 'clean:server'
+ - 'svgstore'
+ - 'regenerate'
+ - 'connect'
  - 'watch'
+
+build:
+ - 'clean:dist'
+ - 'scsslint'
+ - 'jekyll:dist'
+ - 'sass:dist'
+ - 'autoprefixer:dist'
+ - 'imagemin:dist'
+ - 'htmlmin:dist'
+
+regenerate:
+ - 'jekyll:dev'
+ - 'sass:dev'
+ - 'autoprefixer:dev'
+ - 'imagemin:dev'
+ - 'htmlmin:dev'

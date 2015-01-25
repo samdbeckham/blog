@@ -1,9 +1,6 @@
 module.exports = {
     options: {
-        // bundleExec: true,
-        src: '.tmp',
-        layouts: '_layouts',
-        plugins: '_plugins',
+        src: 'dev',
     },
     dist: {
         options: {
@@ -12,8 +9,9 @@ module.exports = {
     },
     dev: {
         options: {
-            dest: 'server',
+            dest: '.tmp',
             drafts: true,
+            future: true
         }
     }
 };

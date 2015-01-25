@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="page article">
+    <header class="page__header"
+        {% if page.background %}
+            style="background: {{ page.background }};"
+        {% endif %}
+    >
+        <div class="wrapper">
+            <div class="page__header__headings">
+                <h1>{{ page.title }}</h1>
+                <span>{{ page.client }}</span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="page__content">
+            {{ content }}
+        </div>
+    </div>
+</article>
