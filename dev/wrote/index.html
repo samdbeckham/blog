@@ -15,11 +15,11 @@ title: Stuff I wrote
 	<ul class="wrapper post-list__list">
     	{% for post in posts %}
 			<li class="post-list__item">
-				<a href="{{ post.url }}" class="card" style="background-color:{{ post.background.color }}">
-                    <img src="{{ post.background.image }}" class="card__image" alt="">
+				<a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
                     <div class="card__title">
                         <h2>{{ post.title }}</h2>
                         <span>{{ post.date | date: "%-d %B %Y" }}</span>
+                        <p>{{ post.excerpt | strip_html }}</p>
                     </div>
 				</a>
 			</li>

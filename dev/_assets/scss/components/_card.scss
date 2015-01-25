@@ -7,27 +7,41 @@
     position: relative;
 }
 
-.card__image {
-    left: $ratio--inv#{em};
-    position: absolute;
-    right: $ratio--inv#{em};
-    top: $ratio--inv#{em};
-    width: calc(100% - 1.236066em);
-}
-
 .card__title {
-    background-color: $color__gray--light;
+    background-color: $color__white;
     bottom: 0;
-    color: $color__black;
+    color: $color__gray--dark;
     display: block;
     left: 0;
-    min-height: percentage(1 - $ratio--inv);
+    height: percentage(1 - $ratio--inv);
     padding: $ratio--inv#{em};
     position: absolute;
     right: 0;
+    transition: height .4s;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: pow($ratio, 2)#{em};
+        background-image: linear-gradient(to top, $color__white, rgba($color__white, 0));
+    }
+
+    .card:hover &{
+        height: percentage($ratio--inv);
+    }
 
     h2 {
         line-height: 1em;
         margin: 0;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.4em;
     }
 }

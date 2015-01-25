@@ -1,9 +1,7 @@
 ---
 layout: article
 title:  Automation
-background:
-  image: /images/articles/automation/background.svg
-  color: '#eb9532'
+background: '#eb9532'
 ---
 
 For years I've been facinated by automation. Why waste time doing menial tasks when you can program a machine to do them for you?

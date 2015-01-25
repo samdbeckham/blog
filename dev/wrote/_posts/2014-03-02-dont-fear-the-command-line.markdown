@@ -2,9 +2,8 @@
 layout: article
 title:  "Don't fear the command line"
 description: "The command line is a very powerful ally."
-background:
-  image: /images/articles/command-line/background.svg
 ---
+
 Every developer fears the command line at first. It’s bleak, un-familiar and has the power to erase your entire hard drive with a [few mis-placed keystrokes](http://youtu.be/8dhp_20j0Ys). I myself felt the same way until a year or two ago, until I dove in head-first. With a little [help](https://twitter.com/jamiecurle) and [guidance](https://twitter.com/anthonysterling), my day-to-day now looks like a scene from the Matrix; and I’m completely comfortable with that.
 
 Over the years, I’ve integrated it more and more into my workflow. I use it for committing code with [git](http://git-scm.com/); I use it to compile, minify and test my code with [grunt](http://gruntjs.com/); I use it to set up my server; I even use it to [install my applications](https://github.com/caskroom/homebrew-cask). I’m trying to transition into using VIM as my go-to editor, but Sublime text is just far too lovely so I’m sticking with that for now.
