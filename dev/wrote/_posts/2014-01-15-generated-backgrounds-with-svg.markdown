@@ -2,7 +2,7 @@
 layout: article
 title:  "Generated Backgrounds With SVG"
 description: “Playing with maths, geometry and Base64 encoded SVGs”
-background: '#16a085'
+background: '#8e44ad'
 ---
 
 Just before Christmas I decided to have a play about with SVG on Codepen. It got quite a lot of attention and I was asked to write a post detailing the process; here is that post.

@@ -2,6 +2,7 @@
 layout: article
 title:  "Don't fear the command line"
 description: "The command line is a very powerful ally."
+background: '#16a085'
 ---
 
 Every developer fears the command line at first. It’s bleak, un-familiar and has the power to erase your entire hard drive with a [few mis-placed keystrokes](http://youtu.be/8dhp_20j0Ys). I myself felt the same way until a year or two ago, until I dove in head-first. With a little [help](https://twitter.com/jamiecurle) and [guidance](https://twitter.com/anthonysterling), my day-to-day now looks like a scene from the Matrix; and I’m completely comfortable with that.
