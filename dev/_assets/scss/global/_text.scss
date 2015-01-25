@@ -25,10 +25,8 @@ p {
     margin-bottom: $ratio--inv#{em};
     max-width: 38em;
 
-    .article & {
-        &:first-of-type {
-            font-size: $ratio#{em};
-            line-height: $ratio#{em};
-        }
+    &:first-of-type {
+        font-size: $ratio#{em};
+        line-height: $ratio#{em};
     }
 }

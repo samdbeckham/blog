@@ -17,34 +17,35 @@ layout: default
 	<div class="wrapper">
     	<div class="article__content">
 	    	{{ content }}
+
+            <h2>Work</h2>
+            <ul>
+                {% for post in work %}
+                    <li class="post-list__item">
+                        <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
+                            <div class="card__title">
+                                <h3>{{ post.title }}</h3>
+                                <em>{{ post.date | date: "%-d %B %Y" }}</em>
+                                <p>{{ post.excerpt | strip_html }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <h2>Articles</h2>
+            <ul>
+                {% for post in articles %}
+                    <li class="post-list__item">
+                        <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
+                            <div class="card__title">
+                                <h3>{{ post.title }}</h3>
+                                <em>{{ post.date | date: "%-d %B %Y" }}</em>
+                                <p>{{ post.excerpt | strip_html }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
 	    </div>
-        <h2>Work</h2>
-        <ul>
-            {% for post in work %}
-                <li class="post-list__content">
-                    <div class="wrapper">
-                        <a href="{{ post.url }}" class="post-list__button button">Read post</a>
-                        <div class="post-list__title">
-                            <h2>{{ post.title }}</h2>
-                            <h3>{{ post.client }}</h3>
-                        </div>
-                    </div>
-                </li>
-            {% endfor %}
-        </ul>
-        <h2>Articles</h2>
-        <ul>
-            {% for post in articles %}
-                <li class="post-list__content">
-                    <div class="wrapper">
-                        <a href="{{ post.url }}" class="post-list__button button">Read post</a>
-                        <div class="post-list__title">
-                            <h2>{{ post.title }}</h2>
-                            <h3>{{ post.date | date: "%-d %B %Y" }}</h3>
-                        </div>
-                    </div>
-                </li>
-            {% endfor %}
-        </ul>
     </div>
 </article>
