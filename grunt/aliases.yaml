@@ -14,7 +14,7 @@ build:
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'
- - 'imagemin:dev'
+ - 'imagemin:dist'
  - 'htmlmin:dist'
 
 regenerate:
