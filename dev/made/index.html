@@ -4,25 +4,28 @@ title: Stuff I made
 ---
 
 {% assign posts = site.posts | where:'dir', '/made' %}
-
-<section class="post-list">
-    <header class="post-list__header">
-    	<div class="wrapper">
-	        <h1>{{ page.title }}</h1>
-	        <h2>A portfolio of sorts.</h2>
-	    </div>
-    </header>
-	<ul>
-    	{% for post in posts %}
-			<li class="post-list__content">
-				<div class="wrapper">
-					<a href="{{ post.url }}" class="post-list__button button">Read post</a>
-					<div class="post-list__title">
-						<h2>{{ post.title }}</h2>
-						<em>{{ post.date | date: "%-d %B %Y" }}</em>
-					</div>
-				</div>
-			</li>
-    	{% endfor %}
-    </ul>
-</section>
+{% if posts == empty %}
+    <div class="nothing-to-see"></div>
+{% else %}
+    <section class="post-list">
+        <header class="post-list__header">
+        	<div class="wrapper">
+    	        <h1>{{ page.title }}</h1>
+    	        <h2>A portfolio of sorts.</h2>
+    	    </div>
+        </header>
+    	<ul>
+        	{% for post in posts %}
+    			<li class="post-list__content">
+    				<div class="wrapper">
+    					<a href="{{ post.url }}" class="post-list__button button">Read post</a>
+    					<div class="post-list__title">
+    						<h2>{{ post.title }}</h2>
+    						<em>{{ post.date | date: "%-d %B %Y" }}</em>
+    					</div>
+    				</div>
+    			</li>
+        	{% endfor %}
+        </ul>
+    </section>
+{% endif %}

@@ -17,35 +17,38 @@ layout: default
 	<div class="wrapper">
     	<div class="page__content">
 	    	{{ content }}
-
-            <h2>Work</h2>
-            <ul>
-                {% for post in work %}
-                    <li class="post-list__item">
-                        <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
-                            <div class="card__title">
-                                <h3>{{ post.title }}</h3>
-                                <em>{{ post.date | date: "%-d %B %Y" }}</em>
-                                <p>{{ post.excerpt | strip_html }}</p>
-                            </div>
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-            <h2>Articles</h2>
-            <ul>
-                {% for post in articles %}
-                    <li class="post-list__item">
-                        <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
-                            <div class="card__title">
-                                <h3>{{ post.title }}</h3>
-                                <em>{{ post.date | date: "%-d %B %Y" }}</em>
-                                <p>{{ post.excerpt | strip_html }}</p>
-                            </div>
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
+            {% if work != empty %}
+                <h2>Work</h2>
+                <ul>
+                    {% for post in work %}
+                        <li class="post-list__item">
+                            <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
+                                <div class="card__title">
+                                    <h3>{{ post.title }}</h3>
+                                    <em>{{ post.date | date: "%-d %B %Y" }}</em>
+                                    <p>{{ post.excerpt | strip_html }}</p>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% if articles != empty %}
+                <h2>Articles</h2>
+                <ul>
+                    {% for post in articles %}
+                        <li class="post-list__item">
+                            <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
+                                <div class="card__title">
+                                    <h3>{{ post.title }}</h3>
+                                    <em>{{ post.date | date: "%-d %B %Y" }}</em>
+                                    <p>{{ post.excerpt | strip_html }}</p>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
 	    </div>
     </div>
 </article>
