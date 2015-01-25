@@ -1,26 +1,17 @@
-.post-list__header {
-    // @extend %layout__default;
-    // @extend %layout__header;
-
-    background-color: $color__gray;
-}
-
 .post-list {
     background-color: $color__gray--light;
 }
 
-.post-list__item{
+.post-list__item {
     display: inline-block;
     padding: $ratio--inv#{em};
-
     width: percentage(1/2);
 
     @include breakpoint(small) {
         width: percentage(1/3);
     }
+
     @include breakpoint(medium) {
         width: percentage(1/4);
     }
 }
-
-

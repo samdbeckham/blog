@@ -16,7 +16,7 @@
     }
 
     @if $exp != round($exp) {
-        @warn "Sorry, pow can only handle whole number exponents at the moment.";
+        @warn 'Sorry, pow can only handle whole number exponents at the moment.';
         @return false;
     }
 
