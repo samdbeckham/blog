@@ -5,6 +5,7 @@
     right: 0;
     top: 0;
     transition: background-color 1s;
+    z-index: 999;
 
     a {
         color: $color__white;

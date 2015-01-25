@@ -15,10 +15,11 @@ build:
  - 'sass:dist'
  - 'autoprefixer:dist'
  - 'imagemin:dev'
- - 'htmlmin'
+ - 'htmlmin:dist'
 
 regenerate:
  - 'jekyll:dev'
  - 'sass:dev'
  - 'autoprefixer:dev'
  - 'imagemin:dev'
+ - 'htmlmin:dev'
