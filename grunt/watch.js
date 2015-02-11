@@ -6,6 +6,12 @@ module.exports = {
         files: 'dev/_assets/scss/{,*/,*/*/}*.scss',
         tasks: ['sass:dev','autoprefixer:dev'],
     },
+    scripts: {
+        files: ['dev/_assets/scripts/**/*.{js,json}'],
+        tasks: [
+            'browserify:dev'
+        ]
+    },
     images: {
         files: 'dev/_assets/images/**/*.{jpg,gif,png,svg}',
         tasks: 'imagemin:dev'

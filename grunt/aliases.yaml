@@ -10,7 +10,7 @@ serve:
 
 build:
  - 'clean:dist'
- - 'scsslint'
+ - 'lint'
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'
@@ -20,7 +20,12 @@ build:
 
 regenerate:
  - 'jekyll:dev'
+ - 'browserify:dev'
  - 'sass:dev'
  - 'autoprefixer:dev'
  - 'imagemin:dev'
  - 'htmlmin:dev'
+
+lint:
+ - 'newer:scsslint'
+ - 'newer:jshint'
