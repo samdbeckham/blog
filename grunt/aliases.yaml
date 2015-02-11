@@ -15,6 +15,7 @@ build:
  - 'sass:dist'
  - 'autoprefixer:dist'
  - 'imagemin:dist'
+ - 'modernizr'
  - 'htmlmin:dist'
 
 regenerate:
