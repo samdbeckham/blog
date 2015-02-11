@@ -1,3 +1,3 @@
-var test = require('./components/test.js');
+var pageTransition = require('./components/pageTransition.js');
 
-test();
+new pageTransition(document.getElementById('transition-me'));
