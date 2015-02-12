@@ -34,9 +34,17 @@ pageTransition.prototype.goToLink = function() {
     var target = this.getTarget(),
         delay = this.getDuration();
 
+    this.preload(target);
+
     setTimeout(function() {
         window.location.href = target
     }, delay);
+}
+
+pageTransition.prototype.preload = function(page) {
+    var req = new XMLHttpRequest();
+    req.open('GET', page, true);
+    req.send(null);
 }
 
 pageTransition.prototype.getDuration = function() {
