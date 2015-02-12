@@ -13,12 +13,12 @@ html {
 }
 
 .fullscreen {
-    position: fixed;
-    top: -10%;
-    left: -10%;
-    right: -10%;
     bottom: -10%;
-    width: 120%;
     height: 120%;
+    left: -10%;
     padding: 0;
+    position: fixed;
+    right: -10%;
+    top: -10%;
+    width: 120%;
 }

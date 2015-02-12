@@ -27,5 +27,5 @@ regenerate:
  - 'htmlmin:dev'
 
 lint:
- - 'newer:scsslint'
- - 'newer:jshint'
+ - 'scsslint'
+ - 'jshint'

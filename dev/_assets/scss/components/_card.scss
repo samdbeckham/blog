@@ -8,7 +8,7 @@
     transform-origin: 0 0;
 
     &.transitioning {
-        transition: transform .3s cubic-bezier(0.600, -0.1, 0.75, 0.045);
+        transition: transform .3s cubic-bezier(.6, -.1, .75, .045);
         z-index: 999;
     }
 }
