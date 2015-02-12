@@ -49,7 +49,7 @@ pageTransition.prototype.getDuration = function() {
 }
 
 pageTransition.prototype.getTarget = function(href) {
-    var self = this;
+    var self = this,
     target = href || self.el.href;
 
     return target;

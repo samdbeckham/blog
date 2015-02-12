@@ -21,3 +21,15 @@
         display: none;
     }
 }
+
+main {
+    background-color: $color__white;
+
+    .js & {
+        transition: transform .3s cubic-bezier(0.175, 0.885, 0.320, 1.1);
+
+        &.animate-in {
+            transform: translate(0, 100%);
+        }
+    }
+}

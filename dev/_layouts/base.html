@@ -28,7 +28,13 @@
         </script>
     </head>
 
-    <body {% if page.slug %}class="page__{{ page.slug }}"{% endif %}>
+    {% if page.background %}
+        {% assign background = page.background %}
+    {% else %}
+        {% assign background = '#31394e' %}
+    {% endif %}
+
+    <body {% if page.slug %}class="page__{{ page.slug }}"{% endif %} style="background-color:{{ background }}">
         <div class="hide">{% include icon-sprite.svg %}</div>
         {{ content }}
         <script src="/scripts/main.js"></script>
