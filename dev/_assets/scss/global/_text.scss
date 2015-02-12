@@ -1,20 +1,21 @@
-.italic,
+%italic,
 i,
 em {
     font-style: italic;
 }
 
-.bold,
+%bold,
 b,
 strong {
     font-weight: bold;
 }
 
-.underline,
+%underline,
 u {
     text-decoration: underline;
 }
 
+%strike,
 .strike,
 s,
 strike {

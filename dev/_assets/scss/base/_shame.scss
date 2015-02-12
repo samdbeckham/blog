@@ -1,1 +1,17 @@
 // This is the shame file. It is meant to be used solely as a sandbox.
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    @extend %italic;
+
+    bottom: 0;
+    color: $color__gray;
+    padding: 0 $ratio#{em};
+    position: absolute;
+    right: 100%;
+    text-align: right;
+    width: percentage((1 - map-get($columns, d)) / map-get($columns, d));
+}
