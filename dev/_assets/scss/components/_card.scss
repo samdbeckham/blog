@@ -5,6 +5,7 @@
     overflow: hidden;
     padding-bottom: percentage($ratio);
     position: relative;
+    transform-origin: 0 0;
 }
 
 .card__title {

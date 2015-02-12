@@ -9,4 +9,16 @@
     width: 100%;
     height: 100%;
     z-index: 999;
+    padding: 0;
+}
+
+.transitioning {
+    transition: transform .4s;
+    z-index: 99;
+}
+
+.card__title {
+    .transitioning & {
+        display: none;
+    }
 }

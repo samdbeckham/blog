@@ -20,7 +20,7 @@ pageTransition.prototype._init = function() {
 
     self.el.onclick = function(e) {
         e.preventDefault();
-        self.beginTransition();
+        self.animate();
     }
 };
 
@@ -31,40 +31,50 @@ pageTransition.prototype.setTarget = function(href) {
     return target;
 }
 
-pageTransition.prototype.beginTransition = function() {
-    var self = this;
+pageTransition.prototype.animate = function() {
+    var self = this,
+        bounds = self.getBounds();
+        tweens = self.getTweens(bounds);
 
-    self.getAnimationBounds();
-    self.calculateAnimation();
-
-    console.log(self.animation);
+    self.animateTo(tweens);
 
     // history.pushState({}, '', self.target);
 }
 
-pageTransition.prototype.getAnimationBounds = function() {
-    var self = this;
-    self.animation = {};
+pageTransition.prototype.getBounds = function() {
+    var self = this,
+        animation = {};
 
-    self.animation.start = self.el.getBoundingClientRect();
+    animation.start = self.el.getBoundingClientRect();
     self.el.classList.add('fullscreen');
 
-    self.animation.end = self.el.getBoundingClientRect();
+    animation.end = self.el.getBoundingClientRect();
     self.el.classList.remove('fullscreen');
+
+    return animation;
 }
 
-pageTransition.prototype.calculateAnimation = function() {
-    var self = this,
-        properties = {};
+pageTransition.prototype.getTweens = function(animation) {
+    var properties = {};
 
     properties.translate = {},
     properties.scale = {};
 
-    properties.translate.y = self.animation.end.top - self.animation.start.top + 'px';
-    properties.translate.x = self.animation.end.left - self.animation.start.left + 'px';
+    properties.translate.y = animation.end.top - animation.start.top + 'px';
+    properties.translate.x = animation.end.left - animation.start.left + 'px';
 
+    properties.scale.y = animation.end.height / animation.start.height;
+    properties.scale.x = animation.end.width / animation.start.width;
 
+    return properties;
+}
+
+pageTransition.prototype.animateTo = function(properties) {
+    var self = this;
+
+    self.el.classList.add('transitioning');
     transform = 'translate(' + properties.translate.x + ', ' + properties.translate.y + ')';
+    transform += ' scale(' + properties.scale.x + ', ' + properties.scale.y + ')';
 
     self.el.style.transform = transform;
 }
