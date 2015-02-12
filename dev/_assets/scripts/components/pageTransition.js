@@ -16,40 +16,53 @@ pageTransition.prototype._init = function() {
     'use strict';
     var self = this;
 
-    self.target = self.setTarget();
-
     self.el.onclick = function(e) {
         e.preventDefault();
         self.animate();
+        self.goToLink();
     }
 };
 
-pageTransition.prototype.setTarget = function(href) {
+pageTransition.prototype.animate = function() {
+    var bounds = this.getBounds();
+        tweens = this.getTweens(bounds);
+
+    this.animateTo(tweens);
+}
+
+pageTransition.prototype.goToLink = function() {
+    var target = this.getTarget(),
+        delay = this.getDuration();
+
+    setTimeout(function() {
+        window.location.href = target
+    }, delay);
+}
+
+pageTransition.prototype.getDuration = function() {
+    var style = window.getComputedStyle(this.el),
+        duration = style.transitionDuration;
+
+    duration = (duration.indexOf("ms") > -1) ? parseFloat(duration) : parseFloat(duration) * 1000;
+
+    return duration;
+}
+
+pageTransition.prototype.getTarget = function(href) {
     var self = this;
     target = href || self.el.href;
 
     return target;
 }
 
-pageTransition.prototype.animate = function() {
-    var self = this,
-        bounds = self.getBounds();
-        tweens = self.getTweens(bounds);
-
-    self.animateTo(tweens);
-
-    // history.pushState({}, '', self.target);
-}
-
 pageTransition.prototype.getBounds = function() {
-    var self = this,
-        animation = {};
+    var animation = {};
 
-    animation.start = self.el.getBoundingClientRect();
-    self.el.classList.add('fullscreen');
+    animation.start = this.el.getBoundingClientRect();
+    this.el.classList.add('fullscreen');
 
-    animation.end = self.el.getBoundingClientRect();
-    self.el.classList.remove('fullscreen');
+    animation.end = this.el.getBoundingClientRect();
+    this.el.classList.remove('fullscreen');
 
     return animation;
 }
@@ -70,13 +83,11 @@ pageTransition.prototype.getTweens = function(animation) {
 }
 
 pageTransition.prototype.animateTo = function(properties) {
-    var self = this;
-
-    self.el.classList.add('transitioning');
+    this.el.classList.add('transitioning');
     transform = 'translate(' + properties.translate.x + ', ' + properties.translate.y + ')';
     transform += ' scale(' + properties.scale.x + ', ' + properties.scale.y + ')';
 
-    self.el.style.transform = transform;
+    this.el.style.transform = transform;
 }
 
 module.exports = pageTransition;
