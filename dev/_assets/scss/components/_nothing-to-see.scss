@@ -1,0 +1,15 @@
+.nothing-to-see {
+    background-color: $color__black;
+    background-image: url('/images/nothing-to-see-here.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}

@@ -5,6 +5,12 @@
     overflow: hidden;
     padding-bottom: percentage($ratio);
     position: relative;
+    transform-origin: 0 0;
+
+    &.transitioning {
+        transition: transform .3s cubic-bezier(.6, -.1, .75, .045);
+        z-index: 999;
+    }
 }
 
 .card__title {
@@ -29,6 +35,10 @@
         position: absolute;
         right: 0;
         width: 100%;
+    }
+
+    .transitioning & {
+        display: none;
     }
 
     .card:hover & {
