@@ -11,3 +11,14 @@ html {
 .hide.hide {
     display: none;
 }
+
+.fullscreen {
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    right: -10%;
+    bottom: -10%;
+    width: 120%;
+    height: 120%;
+    padding: 0;
+}

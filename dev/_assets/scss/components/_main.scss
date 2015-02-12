@@ -1,0 +1,11 @@
+main {
+    background-color: $color__white;
+
+    .js & {
+        transition: transform .4s cubic-bezier(.38,.3,.41,1.2);
+
+        &.animate-in {
+            transform: translate(0, 100%);
+        }
+    }
+}

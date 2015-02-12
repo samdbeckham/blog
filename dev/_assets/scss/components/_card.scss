@@ -6,6 +6,11 @@
     padding-bottom: percentage($ratio);
     position: relative;
     transform-origin: 0 0;
+
+    &.transitioning {
+        transition: transform .3s cubic-bezier(0.600, -0.1, 0.75, 0.045);
+        z-index: 999;
+    }
 }
 
 .card__title {
@@ -30,6 +35,10 @@
         position: absolute;
         right: 0;
         width: 100%;
+    }
+
+    .transitioning & {
+        display: none;
     }
 
     .card:hover & {
