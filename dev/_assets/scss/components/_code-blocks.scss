@@ -5,7 +5,6 @@ code {
     -webkit-font-smoothing: antialiased;
 }
 
-.highlight,
 pre {
     background-color: $color__black;
     margin: $ratio#{em} 0;
@@ -50,5 +49,11 @@ pre {
             1
         ));
         left: 0;
+    }
+}
+
+.highlight {
+    @include breakpoint(small) {
+        margin-left: 0 - percentage(map-get($columns, c) + map-get($columns, b));
     }
 }

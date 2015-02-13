@@ -1,0 +1,18 @@
+figure {
+    position: relative;
+}
+
+figcaption {
+    @extend %italic;
+
+    color: $color__gray;
+
+    @include breakpoint (small) {
+        bottom: 0;
+        padding: 0 $ratio#{em};
+        position: absolute;
+        right: 100%;
+        text-align: right;
+        width: percentage((1 - map-get($columns, d)) / map-get($columns, d));
+    }
+}
