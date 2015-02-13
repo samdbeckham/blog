@@ -14,7 +14,6 @@ imageFixer.prototype.options = {
 
 imageFixer.prototype._init = function() {
     'use strict';
-    var self = this;
 
     this.setAltCaption();
 };
@@ -30,6 +29,6 @@ imageFixer.prototype.setAltCaption = function() {
 
     figure.appendChild(this.el);
     figure.appendChild(caption);
-}
+};
 
 module.exports = imageFixer;
