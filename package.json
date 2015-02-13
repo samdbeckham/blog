@@ -17,6 +17,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jekyll": "^0.4.2",
     "grunt-modernizr": "^0.6.0",
+    "grunt-processhtml": "^0.3.7",
     "grunt-scss-lint": "^0.3.4",
     "grunt-svgstore": "^0.4.1",
     "jit-grunt": "^0.7.0",

@@ -14,8 +14,11 @@ build:
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'
+ - 'browserify:dist'
+ - 'uglify'
  - 'imagemin:dist'
  - 'modernizr'
+ - 'processhtml'
  - 'htmlmin:dist'
 
 regenerate:
