@@ -1,8 +1,13 @@
 ---
 layout: homepage
-title: Hello
+title: Sam Beckham
 ---
 
-I am Sam. I'm a front-end developer from the top right corner of England. I do not like green eggs and ham.
+Sam is a front-end developer and co-organiser of [Frontend NE](https://frontendne.co.uk); a meetup for front-end developers in the North East.
 
-Playing about with the web is my passion and something I do for fun on here, and proffessionally at [Drummond Central](http://www.drummondcentral.co.uk). I also do the occasional bit of freelance work if the project's right. Got something interesting that needs building? [Get in touch](mailto:sam@beckham.io).
+Currently, he works at the North East's favourite marketing company, [Drummond Central](http://drummondcnetral.co.uk).
+With over 5 years industry experience, his past work includes, Blackberry, Stoke FC and Nexus.
+He likes messing around on CodePen and has one of the most loved pens of 2014, nice.
+
+You can follow him as samdbeckham  on [Github](https://github.com/samdbeckham), [Twitter](http://twitter.com/samdbeckham), or [Codepen](http://codepen.io/samdbeckham/).
+Yes, the D stands for David; and no, there's no relation (unfortunately).
