@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Thanks Codepen!
-background: '#f4d03f'
+background: '#c0392b'
 ---
 
 Once again, one of my pens has gotten a lot of attention. So much—in fact—that it’s one of the most hearted pens of 2014. I’m stunned.
