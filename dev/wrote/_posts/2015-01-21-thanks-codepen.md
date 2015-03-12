@@ -12,12 +12,18 @@ This is the pen in question: [Firewatch parallax in CSS](http://codepen.io/samdb
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 **Full disclaimer:** I did not design or illustrate any of this.
-If you haven't seen it already, this is a remake of the beautifully illustrated [firewatch]() website.
-I wanted to see if I could do parallax with just CSS and—since this is the best designed parallax effect I've seen on a website—this seemed like a great fit.
+If you haven't seen it already, this is a remake of the beautifully illustrated [Firewatch]() website.
+I wanted to see if I could do parallax with just CSS and this is the best designed parallax effect I’ve seen on a website.
+It was a great fit.
 
 ## How it works
-The reason this effect works so well is because it's mimicing real-life parralax.
-If you move laterally, objects will appear to move slower, the further away they are.
+
+Parallax gets mis-used a lot in web design.
+Often, anything that moves as you scroll through the site gets labeled as parallax.
+That is not what it means, parallax is:
+
+> The effect whereby the position or direction of an object appears to differ when viewed from different positions, e.g. through the viewfinder and the lens of a camera.
+
 This gif illustrates the effect quite well.
 
 ![Trent Walton's real-life parallax example](/images/articles/firewatch/parallax.gif)
@@ -81,11 +87,11 @@ $parallax__amount: 1;
 }
 {% endhighlight %}
 
-Basically, this mixin loops through each modifier and pushes it back in the z-axis.
-The `$x` variable allows us to modify the amount each layer goes back.
+This mixin loops through each modifier and pushes it back in the z-axis.
+The `$x` variable determines the amount each layer goes back.
 I've also modified the color on each one so we can see them clearer later.
 
-If all you can see at the moment is a screen full of gray nothing; don't adjust your set, that's what we're expaecting to see.
+If all you can see at the moment is a screen full of gray nothing; don't adjust your set, that's what we're expecting to see.
 Let's add a little perspective.
 
 {% highlight scss %}
@@ -95,7 +101,7 @@ Let's add a little perspective.
 {% endhighlight %}
 
 And there it is, 100% CSS parallax.
-You won't be able to scroll yet because there's nothing to scroll to.
+You won't be able to scroll yet because there's nowhere to scroll to.
 Just add in an element below the stage and give it the following properties.
 
 {% highlight scss %}
@@ -107,4 +113,24 @@ Just add in an element below the stage and give it the following properties.
 }
 {% endhighlight %}
 
+Now you can scroll away and get all that parallax loveliness.
 
+I've made a pen of this example so you can play about, fork it and create your own version.
+I really do like CodePen.
+
+## Differences
+There are a few differences with the example and the Firewatch pen.
+Mainly, the Firewatch images I used were all the same size so I had to do some maths trickery to scale them back up.
+It's just an extension of the mixin we used to push them back in the z-axis.
+
+{% highlight scss %}
+@for $i from 0 through $parallax__layers {
+    $x: ($parallax__layers - $i) / 2;
+    .parallax__layer__#{$i}{
+        transform: translateZ(-100 * $x#{px}) scale($x + 1);
+    }
+}
+{% endhighlight %}
+
+I also did some re-positioning of the images, and placed a cover over the top, to stop the elements peeking through each other.
+It's all pretty straight forward though, and you can look at all the code on the pen, so I'll leave that as an excersise to the reader.
