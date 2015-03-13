@@ -5,3 +5,11 @@ linters:
         convention: '[a-z]+(((__)|(--?))[a-z]+)*'
     Indentation:
         width: 4
+    SingleLinePerProperty:
+        enabled: true
+        allow_single_line_rule_sets: false
+    ImportantRule:
+        enabled: false
+    ColorVariable:
+        enabled: false
+
