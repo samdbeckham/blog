@@ -1,10 +1,10 @@
 ---
 layout: article
-title: Thanks Codepen!
+title: CSS Parallax Effect
 background: '#c0392b'
 ---
 
-Once again, one of my pens has gotten a lot of attention. So much—in fact—that it’s one of the most hearted pens of 2014. I’m stunned.
+I recently discovered that one of my pens on CodePen is one of the [most hearted pens of 2014](http://codepen.io/2014/popular/10/). I'm stunned.
 
 This is the pen in question: [Firewatch parallax in CSS](http://codepen.io/samdbeckham/pen/OPXPNp). Scroll inside the pen to see the effect.
 
@@ -14,27 +14,27 @@ This is the pen in question: [Firewatch parallax in CSS](http://codepen.io/samdb
 **Full disclaimer:** I did not design or illustrate any of this.
 If you haven't seen it already, this is a remake of the beautifully illustrated [Firewatch]() website.
 I wanted to see if I could do parallax with just CSS and this is the best designed parallax effect I’ve seen on a website.
-It was a great fit.
 
 ## How it works
 
-Parallax gets mis-used a lot in web design.
-Often, anything that moves as you scroll through the site gets labeled as parallax.
-That is not what it means, parallax is:
+Parallax gets mis-labelled a lot in web design.
+Often, anything that moves as you scroll through a site gets called parallax.
+But that's not what it means.
+It's an effect that you probably see every day in the real-world and, when used correctly, can add a nice sense of depth to a website.
+The definition of parallax is:
 
 > The effect whereby the position or direction of an object appears to differ when viewed from different positions, e.g. through the viewfinder and the lens of a camera.
 
-This gif illustrates the effect quite well.
+This gif by [Trent Walton](http://trentwalton.com/2013/01/20/parallax-scrolling-on-the-web/), illustrates the effect quite well.
 
 ![Trent Walton's real-life parallax example](/images/articles/firewatch/parallax.gif)
 
-Most Javascript solutions fake this and just move all images on one plane, usually with a modifier to vary the speed.
-That's not what I did here.
-I used CSS3d transforms to give the scene some actual depth and the effect comes along with it for free.
+In my pen, I used CSS3d transforms to give the scene some depth.
+When combined with some perspective you can get some really nice results.
 
 ## How it's made
-The pen has six layers, but for clarity we'll do it with three.
-We start off with our wrapper, or stage. Inside that stage we have our layers, one div for each.
+*The pen has six layers, but for clarity we'll run through an example with three.*
+We start off with our wrapper, or stage. Inside that stage we have our layers, one element for each.
 
 {% highlight html %}
 <div class="parallax__stage">
@@ -44,8 +44,10 @@ We start off with our wrapper, or stage. Inside that stage we have our layers, o
 </div>
 {% endhighlight %}
 
-That's essentially it for the HTML. I put images in the fire watch example, but that was just to make it pretty.
-Now, on to the CSS. 
+That's essentially it for the HTML.
+We could add images inside them divs, but we'll keep it simple.
+Now, on to the CSS.
+
 We want the stage to fill the viewport and we want each layer to be the same size as the frame.
 That's pretty easy.
 
@@ -53,6 +55,7 @@ That's pretty easy.
 .parallax__stage {
     height: 100vh;
     left: 0;
+    overflow: auto;
     position: absolute;
     top: 0;
     width: 100%;
@@ -69,26 +72,25 @@ That's pretty easy.
 }
 {% endhighlight %}
 
-Now that we've set the stage, we need to add our players.
-This is where the maths come in to play.
-The mixin might look complicated but I'll talk you through it.
-
+Now that we've set the stage, we need to add our (p)layers.
+This is where the math comes in to play.
+We could use standard CSS here, but mixins make it much easier and extendable.
 
 {% highlight scss %}
 $parallax__layers: 3;
 $parallax__amount: 1;
 
 @for $i from 0 through $parallax__layers {
-    $x: -$parallax__amount * ($parallax__layers - $i);
+    $distance: -$parallax__amount * ($parallax__layers - $i);
     .parallax__layer--#{$i}{
         background-color: rgba(0,0,0,(1 + $i) / 10);
-        transform: translateZ($x#{px});
+        transform: translateZ($distance#{px});
     }
 }
 {% endhighlight %}
 
 This mixin loops through each modifier and pushes it back in the z-axis.
-The `$x` variable determines the amount each layer goes back.
+The `$distance` variable determines the distance each layer goes back.
 I've also modified the color on each one so we can see them clearer later.
 
 If all you can see at the moment is a screen full of gray nothing; don't adjust your set, that's what we're expecting to see.
@@ -101,11 +103,13 @@ Let's add a little perspective.
 {% endhighlight %}
 
 And there it is, 100% CSS parallax.
+Well, not quite.
 You won't be able to scroll yet because there's nowhere to scroll to.
 Just add in an element below the stage and give it the following properties.
 
 {% highlight scss %}
 .content {
+    background: rgba(0,0,0,0.8);
     margin-top: 100vh;
     min-height: 100vh; // to make up for the lack of content
     position: relative;
@@ -115,19 +119,19 @@ Just add in an element below the stage and give it the following properties.
 
 Now you can scroll away and get all that parallax loveliness.
 
-I've made a pen of this example so you can play about, fork it and create your own version.
+I've made [a pen of this example](http://codepen.io/samdbeckham/pen/WbaPBQ) so you can play about, fork it and create your own version.
 I really do like CodePen.
 
 ## Differences
 There are a few differences with the example and the Firewatch pen.
 Mainly, the Firewatch images I used were all the same size so I had to do some maths trickery to scale them back up.
-It's just an extension of the mixin we used to push them back in the z-axis.
+It's just an modification of the mixin we used to push them back in the z-axis.
 
 {% highlight scss %}
 @for $i from 0 through $parallax__layers {
-    $x: ($parallax__layers - $i) / 2;
-    .parallax__layer__#{$i}{
-        transform: translateZ(-100 * $x#{px}) scale($x + 1);
+    $distance: ($parallax__layers - $i) / 2;
+    .parallax__layer--#{$i}{
+        transform: translateZ(-100 * $distance#{px}) scale($distance + 1);
     }
 }
 {% endhighlight %}
