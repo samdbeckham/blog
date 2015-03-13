@@ -31,3 +31,12 @@ p {
         line-height: $ratio#{em};
     }
 }
+
+blockquote {
+    padding-left: $ratio--inv#{em};
+    border-left: $ratio--inv#{em} solid $color__gray--light;
+
+    @include breakpoint (small) {
+        margin-left: -2 * $ratio--inv#{em};
+    }
+}
