@@ -2,12 +2,8 @@
 layout: base
 ---
 
-{% include header.html %}
-
-<main role="main">
+<main role="main" class="animate-in">
+    {% include header.html %}
     {{ content }}
+    {% include footer.html %}
 </main>
-
-{% include footer.html %}
-
-<!-- <script src="/scripts/main.js"></script> -->

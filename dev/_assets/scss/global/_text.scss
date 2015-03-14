@@ -1,20 +1,21 @@
-.italic,
+%italic,
 i,
 em {
     font-style: italic;
 }
 
-.bold,
+%bold,
 b,
 strong {
     font-weight: bold;
 }
 
-.underline,
+%underline,
 u {
     text-decoration: underline;
 }
 
+%strike,
 .strike,
 s,
 strike {
@@ -28,5 +29,14 @@ p {
     &:first-of-type {
         font-size: $ratio#{em};
         line-height: $ratio#{em};
+    }
+}
+
+blockquote {
+    padding-left: $ratio--inv#{em};
+    border-left: $ratio--inv#{em} solid $color__gray--light;
+
+    @include breakpoint (small) {
+        margin-left: -2 * $ratio--inv#{em};
     }
 }

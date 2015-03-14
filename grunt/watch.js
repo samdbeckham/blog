@@ -6,6 +6,10 @@ module.exports = {
         files: 'dev/_assets/scss/{,*/,*/*/}*.scss',
         tasks: ['sass:dev','autoprefixer:dev'],
     },
+    scripts: {
+        files: ['dev/_assets/scripts/**/*.{js,json}'],
+        tasks: ['browserify:dev']
+    },
     images: {
         files: 'dev/_assets/images/**/*.{jpg,gif,png,svg}',
         tasks: 'imagemin:dev'
@@ -16,7 +20,7 @@ module.exports = {
     },
     jekyll: {
         files: [
-            'dev/{,*/_posts/}*.{md,markdown}',
+            'dev/**/_posts/*.{md,markdown}',
             'dev/_layouts/*.html',
             'dev/_includes/*.html',
             'dev/made/*.html',

@@ -27,7 +27,7 @@ $columns: (
 
 %layout__content {
     @include breakpoint(small) {
-        margin-left: percentage(map-get($columns, a) + map-get($columns, b) + map-get($columns, c));
+        margin-left: percentage(1 - map-get($columns, d));
         width: percentage(map-get($columns, d));
     }
 }
