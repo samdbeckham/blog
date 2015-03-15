@@ -11,11 +11,11 @@ layout: default
         <div class="wrapper">
             <div class="page__header__headings">
                 <h1>{{ page.title }}</h1>
-                <span>{{ page.client }}</span>
             </div>
         </div>
     </header>
     <div class="wrapper">
+    {% include work-info.html %}
         <div class="page__content">
             {{ content }}
         </div>

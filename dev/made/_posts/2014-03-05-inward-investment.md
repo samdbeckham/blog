@@ -2,7 +2,7 @@
 layout: work
 title:  Inward Investment
 client: Newcastle Gateshead Initiative
-url: 'http://map.investnewcastlegateshead.com/'
+link: 'http://map.investnewcastlegateshead.com/'
 background: '#8e44ad'
 ---
 

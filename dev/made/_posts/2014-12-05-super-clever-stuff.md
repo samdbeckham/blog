@@ -2,7 +2,6 @@
 layout: work
 title: Super Clever Stuff CMS
 client: Drummond Central
-url: 'http://cms.supercleverstuff.co.uk'
 background: '#af4b7a'
 ---
 

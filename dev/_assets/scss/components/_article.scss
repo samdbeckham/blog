@@ -12,7 +12,7 @@
     @extend %layout__default;
     @extend %layout__content;
 
-    background-color: $color__gray--light;
+    background-color: $color__white;
     padding: $ratio--inv#{em};
 
     h1 {

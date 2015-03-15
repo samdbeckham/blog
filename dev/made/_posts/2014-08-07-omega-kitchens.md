@@ -2,7 +2,7 @@
 layout: work
 title: Omega Kitchens
 client: Omega PLC
-url: 'http://erkitchens.co.uk'
+link: 'http://erkitchens.co.uk'
 background: '#e74c3c'
 ---
 

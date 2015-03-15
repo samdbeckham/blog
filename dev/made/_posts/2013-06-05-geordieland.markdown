@@ -2,7 +2,7 @@
 layout: work
 title:  Geordieland
 client: Newcastle Gateshead Initiative
-url: 'http://geordielandmap.com'
+link: 'http://geordielandmap.com'
 background: '#16a085'
 ---
 

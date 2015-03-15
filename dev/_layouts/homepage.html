@@ -17,10 +17,10 @@ layout: default
 	<div class="wrapper">
     	<div class="page__content">
 	    	{{ content }}
-            {% if work != empty %}
-                <h2>Work</h2>
+            {% if articles != empty %}
+                <h2>Blog</h2>
                 <ul>
-                    {% for post in work | limit: 4 %}
+                    {% for post in articles | limit: 4 %}
                         <li class="post-list__item">
                             <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
                                 <div class="card__title">
@@ -33,15 +33,15 @@ layout: default
                     {% endfor %}
                 </ul>
             {% endif %}
-            {% if articles != empty %}
-                <h2>Articles</h2>
+            {% if work != empty %}
+                <h2>Work</h2>
                 <ul>
-                    {% for post in articles | limit: 4 %}
+                    {% for post in work | limit: 4 %}
                         <li class="post-list__item">
                             <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
                                 <div class="card__title">
                                     <h3>{{ post.title }}</h3>
-                                    <em>{{ post.date | date: "%-d %B %Y" }}</em>
+                                    <em>{{ post.date | date: "%B %Y" }}</em>
                                     <p>{{ post.excerpt | strip_html }}</p>
                                 </div>
                             </a>
