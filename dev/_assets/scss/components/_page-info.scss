@@ -1,0 +1,14 @@
+.page__info {
+    background: $color__gray--light;
+    margin-bottom: $ratio#{em};
+    padding: $ratio--inv#{em};
+
+    @include breakpoint(small) {
+        left: 0;
+        padding: $ratio--inv#{em} $ratio#{em};
+        position: absolute;
+        top: $ratio#{em};
+        width: percentage(map-get($columns, a) + map-get($columns, b) + map-get($columns, c));
+    }
+}
+

@@ -1,0 +1,13 @@
+<aside class="page__info">
+    <ul>
+        <li class="no-wrap">
+            <strong>Client:</strong> {{ page.client }}
+        </li>
+        <li class="no-wrap">
+            <strong>Date:</strong> {{ page.date | date:'%B %Y' }}
+        </li>
+        {% if page.link %}<li class="no-wrap">
+            <strong>Website:</strong> <a href="{{ page.link }}">{{page.title}}</a>
+        </li>{% endif %}
+    </ul>
+</aside>
