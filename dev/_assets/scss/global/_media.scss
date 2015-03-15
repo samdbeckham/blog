@@ -4,7 +4,5 @@ img {
 }
 
 figure {
-    + figure {
-        margin-top: $ratio--inv#{em};
-    }
+    margin: $ratio#{em} 0;
 }
