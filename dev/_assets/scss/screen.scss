@@ -5,6 +5,7 @@
 @import 'base/typography';
 
 @import 'layout/grid';
+@import 'layout/no-wrap';
 
 @import 'global/base';
 @import 'global/headings';
@@ -22,6 +23,7 @@
 @import 'components/main';
 @import 'components/nav';
 @import 'components/nothing-to-see';
+@import 'components/page-info';
 @import 'components/post-list';
 @import 'components/syntax';
 
