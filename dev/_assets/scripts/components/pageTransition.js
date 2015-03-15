@@ -106,6 +106,8 @@ pageTransition.prototype.animateTo = function(properties) {
     transform += ' scale(' + properties.scale.x + ', ' + properties.scale.y + ')';
 
     this.el.style.transform = transform;
+    this.el.style.mozTransform = transform;
+    this.el.style.webkitTransform = transform;
 };
 
 module.exports = pageTransition;
