@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: Sam Beckham
+title: About
 ---
 
 Sam is a, front-end developer at [No Divide](http://nodivide.us), and co-organiser of [Frontend NE](https://frontendne.co.uk); a meetup for front-end developers in the North East.
