@@ -1,5 +1,6 @@
 var pageTransition = require('./components/pageTransition.js'),
     imageFixer = require('./components/imageFixer'),
+    fitvids = require('fitvids'),
     cards = document.getElementsByClassName('card'),
     images = document.getElementsByTagName('img'),
     i;
@@ -16,3 +17,5 @@ for (i = 0; i < cards.length; i +=1) {
 for (i = 0; i < images.length; i +=1) {
     new imageFixer(images.item(i));
 }
+
+fitvids();
