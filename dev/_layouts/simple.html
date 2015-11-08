@@ -3,20 +3,15 @@ layout: default
 ---
 
 <article class="page article">
-    <header class="page__header"
-        {% if page.background %}
-            style="background: {{ page.background }};"
-        {% endif %}
-    >
+    <header class="page__header">
     	<div class="wrapper">
             <div class="page__header__headings">
     	        <h1>{{ page.title }}</h1>
-    	        <span class="page__date--header">{{ page.date | date: "%-d %B %Y" }}</span>
             </div>
         </div>
     </header>
     <div class="wrapper">
-    	<div class="page__content">
+        <div class="page__content">
             {{ content }}
         </div>
     </div>

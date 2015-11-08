@@ -1,20 +1,14 @@
 module.exports = {
     dev: {
-        files: [{
-            expand: true,
-            dot: true,
-            cwd: 'dev/_assets',
-            dest: '.tmp',
-            src: 'scripts/*.js'
-        }]
+        files: {
+            '.tmp/scripts/main.js': 'dev/_assets/scripts/main.js',
+            '.tmp/serviceWorker.js': 'dev/_assets/scripts/serviceWorker.js'
+        }
     },
     dist: {
-        files: [{
-            expand: true,
-            dot: true,
-            cwd: 'dev/_assets',
-            dest: 'web',
-            src: 'scripts/*.js'
-        }]
+        files: {
+            'web/scripts/main.js': 'dev/_assets/scripts/main.js',
+            'web/serviceWorker.js': 'dev/_assets/scripts/serviceWorker.js'
+        }
     }
 };

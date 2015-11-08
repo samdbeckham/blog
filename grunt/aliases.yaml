@@ -5,7 +5,8 @@ serve:
  - 'clean:server'
  - 'svgstore'
  - 'regenerate'
- - 'connect'
+ - 'copy:dev'
+ - 'browserSync'
  - 'watch'
 
 build:
