@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Public Speaking is Scary
-background: '#c0392b'
+background: '#f1c40f'
 ---
 
 Alongside spiders, heights, and clowns; public speaking is one of the most common fears. The official term for it is [Glossophobia](http://www.fearof.net/fear-of-public-speaking-phobia-glossophobia/), and it’s ranked as the 13th most common fear in the world. Which is even worse news if you’re [triskaidekaphobic](http://www.fearof.net/fear-of-the-number-13-phobia-triskaidekaphobia/ "Fear of The Number 13 Phobia – Triskaidekaphobia").
