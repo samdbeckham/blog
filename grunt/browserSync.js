@@ -6,10 +6,6 @@ module.exports = {
         server: {
             baseDir: '.tmp',
         },
-        https: {
-            key: 'server.key',
-            cert: 'server.crt',
-        },
         notify: false,
         watchTask: true
     }

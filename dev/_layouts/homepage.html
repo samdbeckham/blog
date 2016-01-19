@@ -18,7 +18,8 @@ layout: default
     	<div class="page__content">
 	    	{{ content }}
             {% if articles != empty %}
-                <h2>Blog</h2>
+                <h2 class="title--has-sub">Blog</h2>
+                <a href="/wrote" class="title--is-sub">See All</a>
                 <ul>
                     {% for post in articles | limit: 4 %}
                         <li class="post-list__item">
@@ -34,7 +35,8 @@ layout: default
                 </ul>
             {% endif %}
             {% if work != empty %}
-                <h2>Work</h2>
+                <h2 class="title--has-sub">Work</h2>
+                <a href="/made" class="title--is-sub">See All</a>
                 <ul>
                     {% for post in work | limit: 4 %}
                         <li class="post-list__item">
