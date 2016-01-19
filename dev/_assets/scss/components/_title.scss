@@ -1,0 +1,11 @@
+.title {
+    &--has-sub {
+        display: inline-block;
+    }
+
+    &--is-sub {
+        display: inline-block;
+        font-style: italic;
+        margin-left: $ratio--inv#{em};
+    }
+}
