@@ -1,12 +1,4 @@
-{% assign work = site.posts | where:'dir', '/made' %}
-{% assign articles = site.posts | where:'dir', '/wrote' %}
-
 <ul>
-    {% if work != empty %}
-        <li class="nav__work"><a href="/made">Work</a></li>
-    {% endif %}
-    {% if articles != empty %}
-        <li class="nav__blog"><a href="/wrote">Blog</a></li>
-    {% endif %}
+    <li class="nav__blog"><a href="/wrote">Blog</a></li>
     <li class="nav__contact"><a href="mailto:sam@beckham.io">Contact</a></li>
 </ul>

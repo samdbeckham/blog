@@ -1,5 +1,4 @@
 ---
-layout: article
 title:  "Super Mario"
 description: "A brief, Nintendo-flavoured article about using the Cicada principal in CSS3."
 background: '#c0392b'

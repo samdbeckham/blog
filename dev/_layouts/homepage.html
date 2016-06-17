@@ -2,9 +2,6 @@
 layout: default
 ---
 
-{% assign work = site.posts | where:'dir', '/made' %}
-{% assign articles = site.posts | where:'dir', '/wrote' %}
-
 <article class="page">
     <header class="page__header">
     	<div class="wrapper">
@@ -17,40 +14,21 @@ layout: default
 	<div class="wrapper">
     	<div class="page__content">
 	    	{{ content }}
-            {% if articles != empty %}
-                <h2 class="title--has-sub">Blog</h2>
-                <a href="/wrote" class="title--is-sub">See All</a>
-                <ul>
-                    {% for post in articles | limit: 4 %}
-                        <li class="post-list__item">
-                            <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
-                                <div class="card__title">
-                                    <h3>{{ post.title }}</h3>
-                                    <em>{{ post.date | date: "%-d %B %Y" }}</em>
-                                    <p>{{ post.excerpt | strip_html }}</p>
-                                </div>
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-            {% if work != empty %}
-                <h2 class="title--has-sub">Work</h2>
-                <a href="/made" class="title--is-sub">See All</a>
-                <ul>
-                    {% for post in work | limit: 4 %}
-                        <li class="post-list__item">
-                            <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
-                                <div class="card__title">
-                                    <h3>{{ post.title }}</h3>
-                                    <em>{{ post.date | date: "%B %Y" }}</em>
-                                    <p>{{ post.excerpt | strip_html }}</p>
-                                </div>
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
+            <h2 class="title--has-sub">Blog</h2>
+            <a href="/wrote" class="title--is-sub">See All</a>
+            <ul>
+                {% for post in site.posts | limit: 4 %}
+                    <li class="post-list__item">
+                        <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
+                            <div class="card__title">
+                                <h3>{{ post.title }}</h3>
+                                <em>{{ post.date | date: "%-d %B %Y" }}</em>
+                                <p>{{ post.excerpt | strip_html }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
 	    </div>
     </div>
 </article>
