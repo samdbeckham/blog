@@ -3,7 +3,7 @@ markdown: kramdown
 permalink: /:categories/:title
 exclude: ['config', 'README.md']
 include: ['.htaccess']
-permalink: wrote/:title
+permalink: wrote/:title.html
 
 defaults:
   -
