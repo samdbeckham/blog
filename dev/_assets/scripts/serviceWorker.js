@@ -19,6 +19,7 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('static-v1')
             .then(cache => cache.addAll([
+                '/scripts/vendor/modernizr.js',
                 '/scripts/main.js',
                 '/css/screen.css',
                 '/offline.html'
