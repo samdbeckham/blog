@@ -2,7 +2,7 @@
     "name": "sam-beckham",
     "private": true,
     "dependencies": {
-        "modernizr": "latest"
+        "modernizr": "2.8.3"
     },
     "devDependencies": {}
 }
