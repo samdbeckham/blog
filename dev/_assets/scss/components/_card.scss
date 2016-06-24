@@ -25,7 +25,7 @@
     right: 0;
     transition: height .4s;
 
-    &:after {
+    &::after {
         background-image: linear-gradient(to top, $color__gray--light, rgba($color__white, 0));
         bottom: 0;
         content: '';
