@@ -6,6 +6,7 @@ serve:
  - 'svgstore'
  - 'regenerate'
  - 'copy:dev'
+ - 'modernizr'
  - 'browserSync'
  - 'watch'
 
@@ -18,7 +19,7 @@ build:
  - 'browserify:dist'
  - 'uglify'
  - 'imagemin:dist'
- - 'modernizr'
+ - 'modernizr:dist'
  - 'processhtml'
  - 'htmlmin:dist'
 
