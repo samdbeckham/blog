@@ -1,0 +1,15 @@
+{
+    "name": "Sam Beckham's Blog",
+    "short_name": "Sam Beckham",
+    "start_url": "/wrote",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#eee",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
