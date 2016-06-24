@@ -1,6 +1,10 @@
 {
   "name": "sam-beckham",
   "description": "The personal blog and portfolio of Sam Beckham, Front end developer.",
+  "scripts": {
+    "start": "grunt serve",
+    "build": "grunt build"
+  },
   "version": "3.4.0",
   "devDependencies": {
     "grunt": "^0.4.5",
