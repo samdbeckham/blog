@@ -4,6 +4,14 @@
 const expectedCaches = ['static-v1'];
 
 self.addEventListener('fetch', event => {
+    const url = event.request.url;
+
+    // If the url ends in .html and is in the /wrote/ directory
+    if(/.*\/wrote\/.*(\.html)$/.test(url)) {
+        caches.open('static-v1')
+            .then(cache => cache.add(url))
+    }
+
     event.respondWith(
         caches.match(event.request)
             .then(response => response || fetch(event.request))
@@ -22,6 +30,7 @@ self.addEventListener('install', event => {
                 '/scripts/vendor/modernizr.js',
                 '/scripts/main.js',
                 '/css/screen.css',
+                '/wrote',
                 '/offline.html'
             ]))
     )
