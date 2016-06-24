@@ -15,7 +15,7 @@
     "grunt-contrib-connect": "^0.7.1",
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-htmlmin": "^0.3.0",
-    "grunt-contrib-imagemin": "^0.9.2",
+    "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-sass": "^0.7.3",
     "grunt-contrib-uglify": "^0.7.0",
@@ -30,6 +30,7 @@
     "load-grunt-config": "^0.9.2"
   },
   "dependencies": {
-    "fitvids": "^1.0.2"
+    "fitvids": "^1.0.2",
+    "npm-modernizr": "2.8.3"
   }
 }
