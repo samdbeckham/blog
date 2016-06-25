@@ -4,10 +4,10 @@
 const expectedCaches = ['static-v1'];
 
 self.addEventListener('fetch', event => {
-    const url = event.request.url;
+    const url = new URL(event.request.url);
 
-    // If the url ends in .html and is in the /wrote/ directory
-    if(/.*\/wrote\/.*(\.html)$/.test(url)) {
+    if(url.pathname.endsWith('html') &&
+        url.pathname.startsWith('/wrote')) {
         caches.open('static-v1')
             .then(cache => cache.add(url))
     }
