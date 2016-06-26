@@ -20,8 +20,8 @@ pre {
         width: 100%;
     }
 
-    &:after,
-    &:before {
+    &::after,
+    &::before {
         content: '';
         display: block;
         height: 100%;
@@ -31,7 +31,7 @@ pre {
         z-index: 2;
     }
 
-    &:after {
+    &::after {
         background-image: linear-gradient(
             to right,
             rgba($color__black, 0),
@@ -41,7 +41,7 @@ pre {
         right: 0;
     }
 
-    &:before {
+    &::before {
         background-image: linear-gradient(
             to left,
             rgba($color__black, 0),

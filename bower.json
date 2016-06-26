@@ -1,8 +1,0 @@
-{
-    "name": "sam-beckham",
-    "private": true,
-    "dependencies": {
-        "modernizr": "latest"
-    },
-    "devDependencies": {}
-}

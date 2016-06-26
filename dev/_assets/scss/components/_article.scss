@@ -6,6 +6,25 @@
     background-color: $color__black;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    transition: transform .4s cubic-bezier(.38, .3, .41, 1.2);
+    z-index: 1;
+
+    &::before {
+        background-color: inherit;
+        bottom: 100%;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.page__header--animated {
+    .js .animate-in & {
+        transform: translate(0, 100%);
+    }
 }
 
 .page__header__headings {

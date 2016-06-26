@@ -8,6 +8,17 @@ html {
     color: $color__black;
 }
 
+hr {
+    background-color: currentcolor;
+    border: 0;
+    display: block;
+    height: 1px;
+    margin: #{pow($ratio, 2)}em 20%;
+    max-width: calc(38em - 40%);
+    opacity: $ratio--inv;
+    width: 60%;
+}
+
 .hide.hide {
     display: none;
 }

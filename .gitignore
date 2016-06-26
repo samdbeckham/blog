@@ -4,3 +4,6 @@
 node_modules
 bower_components
 _drafts
+web
+npm-debug.log
+*.sublime-workspace

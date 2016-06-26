@@ -3,8 +3,6 @@ layout: default
 title: Stuff I wrote
 ---
 
-{% assign posts = site.posts | where:'dir', '/wrote' %}
-
 <section class="page post-list">
     <header class="page__header">
     	<div class="wrapper">
@@ -16,8 +14,14 @@ title: Stuff I wrote
     </header>
     <div class="wrapper">
         <div class="page__content">
+            <p>
+                I don't write anywhere near as often as I should.
+                I've aslo redesigned this site a few times over the years.
+                As a result of this, some of the older posts reference examples that no-longer exist.
+                Tread carefully.
+            </p>
         	<ul class="post-list__list">
-            	{% for post in posts %}
+            	{% for post in site.posts %}
         			<li class="post-list__item">
         				<a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
                             <div class="card__title">
