@@ -10,7 +10,7 @@ html {
 
 hr {
     background-color: currentcolor;
-    border: none;
+    border: 0;
     display: block;
     height: 1px;
     margin: #{pow($ratio, 2)}em 20%;
