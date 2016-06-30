@@ -2,6 +2,7 @@
 layout: article
 title: A Sprinkling of Web Components
 background: '#e8345a'
+crosspost_to_medium: true
 ---
 
 At UpFront mini last year, I spoke about [sprinkling in Web components](http://slides.com/samdbeckham/using-polymer-today#/8).
