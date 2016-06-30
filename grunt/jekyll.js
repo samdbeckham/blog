@@ -11,7 +11,8 @@ module.exports = {
         options: {
             dest: '.tmp',
             drafts: true,
-            future: true
+            future: true,
+            safe: true
         }
     }
 };
