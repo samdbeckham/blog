@@ -1,0 +1,31 @@
+//  # Text
+
+i,
+em {
+  @extend %italic;
+}
+
+b,
+strong {
+  @extend %bold;
+}
+
+u {
+  @extend %underline;
+}
+
+.strike,
+s,
+strike {
+  @extend %strike;
+}
+
+p {
+  margin-bottom: #{$ratio--inv}em;
+  max-width: $paragraph-width;
+
+  &:first-of-type {
+    font-size: #{$ratio}em;
+    line-height: #{$ratio}em;
+  }
+}

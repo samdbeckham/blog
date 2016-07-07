@@ -1,31 +1,63 @@
-@import 'base/variables';
-@import 'base/reset';
-@import 'base/color-scheme';
-@import 'base/mixins';
-@import 'base/typography';
+//  # Screen
+//  Here lies all the styles for the screen.
+//  It follows the [itscss](http://itcss.io/) and
+//  [css guidelines](cssguidelin.es) by Harry Roberts.
+//  Please read both of these links before adding, or changing **anything**
+//  in these styles.
+//  If you need help understanding what to do with something, contact me and
+//  I'll do my best to help.
+//  <sam@beckham.io>
 
-@import 'layout/grid';
-@import 'layout/no-wrap';
+//  ## Settings
+@import 'settings/animation';
+@import 'settings/breakpoints';
+@import 'settings/color-scheme';
+@import 'settings/global';
+@import 'settings/typography';
 
-@import 'global/base';
-@import 'global/headings';
-@import 'global/icons';
-@import 'global/links';
-@import 'global/media';
-@import 'global/text';
+//  ## Tools
+@import 'tools/breakpoints';
+@import 'tools/pow';
 
-@import 'components/article';
-@import 'components/captions';
+//  ## Generic
+@import 'generic/box-sizing';
+@import 'generic/reset';
+
+//  ## Helpers
+@import 'helpers/grid';
+@import 'helpers/headings';
+@import 'helpers/no-wrap';
+@import 'helpers/text';
+
+//  ## Base
+@import 'base/blockquote';
+@import 'base/captions';
+@import 'base/code';
+@import 'base/headings';
+@import 'base/hr';
+@import 'base/images';
+@import 'base/links';
+@import 'base/main';
+@import 'base/page';
+@import 'base/syntax';
+@import 'base/text';
+
+//  ## Components
 @import 'components/card';
-@import 'components/code-blocks';
+@import 'components/code';
+@import 'components/disclaimer';
 @import 'components/footer';
 @import 'components/header';
-@import 'components/main';
+@import 'components/icons';
 @import 'components/nav';
-@import 'components/nothing-to-see';
-@import 'components/page-info';
+@import 'components/page';
 @import 'components/post-list';
-@import 'components/syntax';
 @import 'components/title';
+@import 'components/wrapper';
 
-@import 'base/shame';
+//  ## Trumps
+@import 'trumps/fullscreen';
+@import 'trumps/hide';
+
+//  ## Shame
+@import 'trumps/shame';

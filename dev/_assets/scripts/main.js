@@ -5,11 +5,11 @@ var pageTransition = require('./components/pageTransition.js'),
     images = document.getElementsByTagName('img'),
     i;
 
-if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/serviceWorker.js', {
-        scope: '/'
-    });
-}
+// if (navigator.serviceWorker) {
+//     navigator.serviceWorker.register('/serviceWorker.js', {
+//         scope: '/'
+//     });
+// }
 
 setTimeout(function() {
     'use strict';

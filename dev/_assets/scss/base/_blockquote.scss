@@ -1,0 +1,10 @@
+//  # Blockquote
+
+blockquote {
+  border-left: #{$ratio--inv}em solid $color__gray--light;
+  padding-left: #{$ratio--inv}em;
+
+  @include breakpoint (small) {
+    margin-left: #{-2 * $ratio--inv}em;
+  }
+}

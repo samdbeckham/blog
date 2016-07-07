@@ -1,0 +1,36 @@
+//  # Breakpoints Mixin
+//
+//  ## Usage
+//  Instead of defining media queries in your SCSS, use this mixin.
+//  It's mobile-first so every using `medium` affects everything that's
+//  'medium' and larger.
+//
+//  It's used inside the block like this:
+//  ```
+//    .responsive-element {
+//      width: 100%;
+//
+//      @include breakpoint(medium) {
+//        width: 300px;
+//      }
+//    }
+//  ```
+
+$default-breakpoint: root;
+$current-breakpoint: $default-breakpoint;
+
+@mixin breakpoint($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+
+  @if $value != null {
+    $current-breakpoint: $breakpoint !global;
+
+    @media (min-width: $value) {
+      @content;
+    }
+
+    $current-breakpoint: $default-breakpoint !global;
+  } @else {
+    @warn "Invalid breakpoint `#{$breakpoint}`.";
+  }
+}

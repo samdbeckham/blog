@@ -1,0 +1,10 @@
+//  # No Wrap
+//  This prevents the text from wrapping onto a new line and adds ellipsis at
+//  at the end of it.
+
+%no-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

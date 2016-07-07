@@ -1,0 +1,12 @@
+//  # Icons
+
+.icon {
+  display: inline-block;
+  height: #{$ratio}em;
+  width: #{$ratio}em;
+}
+
+.main-logo {
+  background-image: none;
+  fill: currentcolor;
+}

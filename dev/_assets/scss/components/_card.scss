@@ -1,58 +1,60 @@
-.card {
-    background-color: $color__black;
-    display: block;
-    height: 0;
-    overflow: hidden;
-    padding-bottom: percentage($ratio);
-    position: relative;
-    transform-origin: 0 0;
+//  # Card
 
-    &.transitioning {
-        transition: transform .3s cubic-bezier(.6, -.1, .75, .045);
-        z-index: 999;
-    }
+.card {
+  background-color: $color__black;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: percentage($ratio);
+  position: relative;
+  transform-origin: 0 0;
+
+  &.transitioning {
+    transition: transform .3s $ease--anticipate;
+    z-index: 999;
+  }
 }
 
 .card__title {
-    background-color: $color__gray--light;
+  background-color: $color__gray--light;
+  bottom: 0;
+  color: $color__gray--dark;
+  display: block;
+  height: percentage(1 - $ratio--inv);
+  left: 0;
+  padding: #{$ratio--inv}em;
+  position: absolute;
+  right: 0;
+  transition: height .4s;
+
+  &::after {
+    background-image: linear-gradient(to top, $color__gray--light, rgba($color__white, 0));
     bottom: 0;
-    color: $color__gray--dark;
+    content: '';
     display: block;
-    height: percentage(1 - $ratio--inv);
+    height: #{pow($ratio, 2)}em;
     left: 0;
-    padding: $ratio--inv#{em};
     position: absolute;
     right: 0;
-    transition: height .4s;
+    width: 100%;
+  }
 
-    &::after {
-        background-image: linear-gradient(to top, $color__gray--light, rgba($color__white, 0));
-        bottom: 0;
-        content: '';
-        display: block;
-        height: pow($ratio, 2)#{em};
-        left: 0;
-        position: absolute;
-        right: 0;
-        width: 100%;
-    }
+  .transitioning & {
+    display: none;
+  }
 
-    .transitioning & {
-        display: none;
-    }
+  .card:hover & {
+    height: percentage($ratio--inv);
+  }
 
-    .card:hover & {
-        height: percentage($ratio--inv);
-    }
+  h2,
+  h3 {
+    line-height: 1em;
+    margin: 0;
+  }
 
-    h2,
-    h3 {
-        line-height: 1em;
-        margin: 0;
-    }
-
-    p {
-        font-size: 1rem;
-        line-height: 1.4em;
-    }
+  p {
+    font-size: 1rem;
+    line-height: 1.4em;
+  }
 }

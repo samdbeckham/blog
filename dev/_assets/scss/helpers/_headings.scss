@@ -1,0 +1,9 @@
+//  # Headings
+//  This is the base set of styles that all the headings extend.
+
+%hn {
+  font-family: $heading-font;
+  font-weight: 500;
+  line-height: 1em;
+  margin: #{$ratio}em 0 #{$ratio--inv}em;
+}

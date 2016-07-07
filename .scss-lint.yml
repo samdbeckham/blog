@@ -4,12 +4,12 @@ linters:
     SelectorFormat:
         convention: '[a-z]+(((__)|(--?))[a-z]+)*'
     Indentation:
-        width: 4
+        width: 2
     SingleLinePerProperty:
         enabled: true
         allow_single_line_rule_sets: false
     ImportantRule:
         enabled: false
     ColorVariable:
-        enabled: false
+        enabled: true
 

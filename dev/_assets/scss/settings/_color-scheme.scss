@@ -1,11 +1,16 @@
+//  # Color Scheme
+//  **DO NOT USE COLORS THAT AREN'T IN THIS SCHEME**
+//  If you feel there's a color you need that isn't in this scheme. Consider
+//  where it would fit in here and add it to the scheme.
+//  Parker will hunt you down.
+//  You have been warned.
+
 $color__black: #31394e;
 $color__white: #fff;
 
 $color__gray: #999;
 $color__gray--light: #eee;
 $color__gray--dark: #5d5d66;
-
-// Colors
 
 $color__red: #c0392b;
 $color__red--light: lighten($color__red, 12%);

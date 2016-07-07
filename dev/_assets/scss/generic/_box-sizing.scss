@@ -1,0 +1,8 @@
+//  # Box Sizing
+//  Makes padding a little more reasonable
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
