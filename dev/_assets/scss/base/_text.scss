@@ -2,22 +2,22 @@
 
 i,
 em {
-  @extend %italic;
+  font-style: italic;
 }
 
 b,
 strong {
-  @extend %bold;
+  font-weight: bold;
 }
 
 u {
-  @extend %underline;
+  text-decoration: underline;
 }
 
 .strike,
 s,
 strike {
-  @extend %strike;
+  text-decoration: line-through;
 }
 
 p {

@@ -14,6 +14,7 @@
 @import 'settings/animation';
 @import 'settings/breakpoints';
 @import 'settings/color-scheme';
+@import 'settings/grid';
 @import 'settings/typography';
 
 //  ## Tools
@@ -23,12 +24,6 @@
 //  ## Generic
 @import 'generic/box-sizing';
 @import 'generic/reset';
-
-//  ## Helpers
-@import 'helpers/grid';
-@import 'helpers/headings';
-@import 'helpers/no-wrap';
-@import 'helpers/text';
 
 //  ## Base
 @import 'base/blockquote';
@@ -58,6 +53,7 @@
 
 //  ## Trumps
 @import 'trumps/fullscreen';
+@import 'trumps/grid';
 @import 'trumps/hide';
 
 //  ## Shame

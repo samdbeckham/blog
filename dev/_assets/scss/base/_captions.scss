@@ -6,9 +6,8 @@ figure {
 }
 
 figcaption {
-  @extend %italic;
-
   color: $color__gray;
+  font-style: italic;
 
   @include breakpoint (small) {
     bottom: 0;

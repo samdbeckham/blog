@@ -2,13 +2,6 @@
 //  The grid is set out as a series of helper classes to keep the markup a
 //  little cleaner.
 
-$columns: (
-  a: .102,
-  b: .115,
-  c: .051,
-  d: .722
-);
-
 %layout__container {
   margin: 0 auto;
   max-width: map-get($breakpoints, large);
