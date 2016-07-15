@@ -9,10 +9,11 @@
 //  <sam@beckham.io>
 
 //  ## Settings
+@import 'settings/global';
+
 @import 'settings/animation';
 @import 'settings/breakpoints';
 @import 'settings/color-scheme';
-@import 'settings/global';
 @import 'settings/typography';
 
 //  ## Tools
