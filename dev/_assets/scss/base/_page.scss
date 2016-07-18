@@ -1,0 +1,14 @@
+//  # Page
+
+html {
+  background-color: $color__gray--light;
+  color: $color__black;
+  font-family: $body-font;
+  font-size: #{$font-size}px;
+  font-weight: $font-weight;
+  line-height: $line-height;
+
+  @include breakpoint(medium) {
+    font-size: #{1.2 * $font-size}px;
+  }
+}

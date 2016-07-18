@@ -1,19 +1,28 @@
+//  # Nav
+
 .nav {
-    margin-bottom: $ratio--inv#{em};
+  margin-bottom: #{$ratio--inv}em;
+}
 
-    li {
-        display: inline-block;
-        margin: 0 $ratio--inv#{em};
-    }
+.nav__item {
+  display: inline-block;
+  margin: 0 #{pow($ratio--inv, 2)}em;
+  text-transform: uppercase;
+  line-height: 1em;
 
-    a {
-        background-image: none;
-        text-transform: uppercase;
+  a {
+    background-image: none;
+    text-decoration: none;
+    padding: #{pow($ratio--inv, 2)}em;
+
+    &:hover {
+      background-color: $color__gray;
     }
+  }
 }
 
 .nav--main {
-    position: absolute;
-    right: $ratio--inv#{em};
-    top: $ratio--inv#{em};
+  position: absolute;
+  right: #{$ratio--inv}em;
+  top: #{$ratio--inv}em;
 }

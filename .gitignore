@@ -1,6 +1,7 @@
 .sass-cache
 .DS_store
 .tmp
+*.bak
 node_modules
 bower_components
 _drafts

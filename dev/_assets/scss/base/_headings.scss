@@ -1,0 +1,25 @@
+//  # Headings
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $heading-font;
+  font-weight: 500;
+  line-height: 1em;
+  margin: #{$ratio}em 0 #{$ratio--inv}em;
+}
+
+h1 {
+  font-size: #{pow($ratio, 2)}em;
+}
+
+h2 {
+  font-size: #{$ratio}em;
+}
+
+h3,
+h4 {
+  font-size: #{1 + (.5 * $ratio--inv)}em;
+}
