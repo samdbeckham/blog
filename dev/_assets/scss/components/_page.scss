@@ -29,16 +29,16 @@
   }
 }
 
-.page__header__headings {
+.page__headings {
   @extend %layout__default;
   @extend %layout__content;
 
   background-color: $color__white;
   padding: #{$ratio--inv}em;
+}
 
-  h1 {
-    margin: 0;
-  }
+.page__title {
+  margin: 0;
 }
 
 .page__content {
