@@ -37,9 +37,8 @@ pre {
     background-image: linear-gradient(
       to right,
       rgba($color__black, 0),
-      rgba($color__black,
-      1
-    ));
+      rgba($color__black, 1)
+    );
     right: 0;
   }
 
@@ -47,9 +46,8 @@ pre {
     background-image: linear-gradient(
       to left,
       rgba($color__black, 0),
-      rgba($color__black,
-      1
-    ));
+      rgba($color__black, 1)
+    );
     left: 0;
   }
 }

@@ -35,26 +35,28 @@
 @import 'base/links';
 @import 'base/main';
 @import 'base/page';
-@import 'base/syntax';
 @import 'base/text';
 
 //  ## Components
 @import 'components/card';
-@import 'components/code';
-@import 'components/disclaimer';
 @import 'components/footer';
-@import 'components/header';
+@import 'components/footnote';
+@import 'components/highlight';
 @import 'components/icons';
 @import 'components/nav';
 @import 'components/page';
+@import 'components/page-header';
 @import 'components/post-list';
 @import 'components/title';
 @import 'components/wrapper';
 
 //  ## Trumps
+@import 'trumps/footer';
 @import 'trumps/fullscreen';
 @import 'trumps/grid';
 @import 'trumps/hide';
+@import 'trumps/links';
+@import 'trumps/page-header';
 
 //  ## Shame
 @import 'trumps/shame';

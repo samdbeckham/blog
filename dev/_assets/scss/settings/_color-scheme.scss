@@ -2,8 +2,9 @@
 //  **DO NOT USE COLORS THAT AREN'T IN THIS SCHEME**
 //  If you feel there's a color you need that isn't in this scheme. Consider
 //  where it would fit in here and add it to the scheme.
-//  Parker will hunt you down.
-//  You have been warned.
+//  Parker will hunt you down. You have been warned.
+
+// 1. These are ugly, and used for syntax highlighting
 
 $color__black: #31394e;
 $color__white: #fff;
@@ -35,3 +36,6 @@ $color__blue--dark: darken($color__blue, 12%);
 $color__purple: #8e44ad;
 $color__purple--light: lighten($color__purple, 12%);
 $color__purple--dark: darken($color__purple, 12%);
+
+$color__olive: #75715e; // [1]
+$color__olive--dark: #49483e; // [1]

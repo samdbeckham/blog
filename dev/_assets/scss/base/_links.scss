@@ -1,6 +1,4 @@
 //  # Links
-//  Just the generic `<a>` links in here. No classes!
-//  Unless it's a modernizr class, that's okay.
 
 a {
   color: $color__blue;
@@ -10,16 +8,5 @@ a {
   &:focus,
   &:visited {
     color: $color__blue--light;
-  }
-
-  // If we have the benefit of CSS gradients
-  .cssgradients & {
-    background-image: linear-gradient(
-      to top,
-      transparent $underline-height - 1,
-      currentcolor $underline-height,
-      transparent $underline-height
-    );
-    text-decoration: none;
   }
 }

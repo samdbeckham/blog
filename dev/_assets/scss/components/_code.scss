@@ -1,7 +1,0 @@
-//  # Code
-
-.highlight {
-  @include breakpoint(small) {
-    margin-left: 0 - percentage(map-get($columns, c) + map-get($columns, b));
-  }
-}

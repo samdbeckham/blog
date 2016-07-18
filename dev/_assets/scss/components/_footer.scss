@@ -4,9 +4,4 @@
   background-color: $color__black;
   color: $color__white;
   text-align: center;
-
-  // TODO: Figure out how to do this in an ITCSS way
-  a {
-    color: $color__gray--light;
-  }
 }
