@@ -24,10 +24,10 @@ title: Stuff I wrote
             	{% for post in site.posts %}
         			<li class="post-list__item">
         				<a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
-                            <div class="card__title">
-                                <h3>{{ post.title }}</h3>
-                                <em>{{ post.date | date: "%-d %B %Y" }}</em>
-                                <p>{{ post.excerpt | strip_html }}</p>
+                            <div class="card__titles">
+                                <h3 class="card__title">{{ post.title }}</h3>
+                                <em class="card__sub-title">{{ post.date | date: "%-d %B %Y" }}</em>
+                                <p class="card__info">{{ post.excerpt | strip_html }}</p>
                             </div>
         				</a>
         			</li>

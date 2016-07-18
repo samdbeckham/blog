@@ -15,7 +15,7 @@
   }
 }
 
-.card__title {
+.card__titles {
   background-color: $color__gray--light;
   bottom: 0;
   color: $color__gray--dark;
@@ -50,15 +50,9 @@
   .card:hover & {
     height: percentage($ratio--inv);
   }
+}
 
-  h2,
-  h3 {
-    line-height: 1em;
-    margin: 0;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.4em;
-  }
+.card__title {
+  line-height: 1em;
+  margin: 0;
 }
