@@ -1,10 +1,11 @@
 //  # Code blocks
 
 code {
-  background-color: $color__black;
+  background-color: $color__gray;
   color: $color__white;
   font-family: $code-font;
   -webkit-font-smoothing: antialiased;
+  padding: #{pow($ratio--inv, 4)}em #{pow($ratio--inv, 2)}em;
 }
 
 pre {
@@ -13,6 +14,7 @@ pre {
   position: relative;
 
   code {
+    background-color: $color__black;
     display: block;
     margin: 0 auto;
     max-width: map-get($breakpoints, large);
