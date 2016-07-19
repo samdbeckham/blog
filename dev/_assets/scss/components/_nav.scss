@@ -6,13 +6,13 @@
 
 .nav__item {
   display: inline-block;
+  line-height: 1em;
   margin: 0 #{pow($ratio--inv, 2)}em;
   text-transform: uppercase;
-  line-height: 1em;
 
   a {
-    text-decoration: none;
     padding: #{pow($ratio--inv, 2)}em;
+    text-decoration: none;
 
     &:hover {
       background-color: $color__gray;
