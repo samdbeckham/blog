@@ -55,7 +55,7 @@ self.addEventListener('install', event => {
 });
 {% endhighlight %}
 
-Let's break this down. First off, we hook in to the install event. `event.waitUntil()` tells our service worker to wait untill all the actions inside that function are completed before finishing the install process and moving into the `installed` state.
+Let's break this down. First off, we hook in to the install event. `event.waitUntil()` tells our service worker to wait until all the actions inside that function are completed before finishing the install process and moving into the `installed` state.
 The installation we wish to perform is to store all the pages we want to cache. `caches.open('static-v3.5.1')` opens a cache named `static-v3.5.1`. Using promises, and `.then()` I added my css, js and a couple of key pages to the newly opened cache.
 
 That's the installation process done. Like any other installation process, it only has to be done once. If we reload this page, this process gets skipped as we'll already have all our files in the cache. This is where we run into our first problem, cache invalidation.
@@ -68,7 +68,7 @@ The plan for this service worker is to serve the files from the cache, instead o
 Luckily, Chrome has us covered. Just jump back into the service workers tab we were in earlier and hit, `[] update on reload`. This will cause Chrome to reload the service worker and re-install itself when you refresh the page, bringing the updated files into the cache. However, we can't set this flag on our users' browsers. This is why I used the version number of my site when I created the cache. Because I use [semver](http://semver.org/), I can be sure that any releases to my site will have a different version number, and therefore a different service worker cache. When I update the site, you initially see the old one whilst the new one installs in the background. Then the next time you load the site, the new one is all ready and waiting in the new cache for you. This does mean we need to do a little housekeeping, but we'll get to that later. Back to the good stuff!
 
 ## Request hijacking
-The service worker is installed, the files are cached, our service worker is primed and ready. This is where the real magic of the service worker comes in to play. Normally, when a browser requests a file it goes straight off to the server. The server hears the request, finds the requested file, and sends ot back to the browser. With a service worker, you can intercept this request.
+The service worker is installed, the files are cached, our service worker is primed and ready. This is where the real magic of the service worker comes in to play. Normally, when a browser requests a file it goes straight off to the server. The server hears the request, finds the requested file, and sends it back to the browser. With a service worker, you can intercept this request.
 
 {% highlight javascript %}
 self.addEventListener('fetch', event => {
@@ -103,7 +103,7 @@ If all goes well, we should be successfully serving our pages from the cache. Th
 
 
 ## Cleaning house
-We tackled the majority of the caching issues earlier, but you'll soon notice a problem. After a while our caches start building up. We'll have the current version's cache, but we'll also have a load of obsolete caches from previous versions. We never access them, so it's only right we clean them up. It's rumoured that this is a feature that wil be coming to service workers in the future, but for now we can do it ourselves:
+We tackled the majority of the caching issues earlier, but you'll soon notice a problem. After a while our caches start building up. We'll have the current version's cache, but we'll also have a load of obsolete caches from previous versions. We never access them, so it's only right we clean them up. It's rumoured that this is a feature that will be coming to service workers in the future, but for now we can do it ourselves:
 
 {% highlight javascript %}
 const currentCache = 'static-v3.5.1';
