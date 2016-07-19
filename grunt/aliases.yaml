@@ -19,7 +19,7 @@ build:
  - 'browserify:dist'
  - 'uglify'
  - 'imagemin:dist'
- - 'modernizr:dist'
+ - 'modernizr'
  - 'processhtml'
  - 'htmlmin:dist'
 
