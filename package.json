@@ -4,9 +4,9 @@
   "scripts": {
     "start": "grunt serve",
     "build": "grunt build",
-    "major": "grunt bump:major",
-    "minor": "grunt bump:minor",
-    "patch": "grunt bump:patch"
+    "major": "grunt lint && grunt bump:major",
+    "minor": "grunt lint && grunt bump:minor",
+    "patch": "grunt lint && grunt bump:patch"
   },
   "version": "3.5.1",
   "devDependencies": {
