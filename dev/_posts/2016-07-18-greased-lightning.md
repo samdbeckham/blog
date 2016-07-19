@@ -2,6 +2,7 @@
 layout: article
 title: Greased Lightning
 background: '#F39C12'
+crosspost_to_medium: true
 ---
 
 There's something satisfying about tweaking and refining a product. Over the last few years, I've been making [my blog](https://sam.beckham.io) progressively faster.
