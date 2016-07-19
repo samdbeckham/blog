@@ -6,6 +6,7 @@ serve:
  - 'svgstore'
  - 'regenerate'
  - 'copy:dev'
+ - 'modernizr'
  - 'browserSync'
  - 'watch'
 

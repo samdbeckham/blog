@@ -1,0 +1,17 @@
+//  # Images
+//  1. Offset `alt` text from surrounding copy.
+//  2. Fluid images for responsive purposes.
+//  3. Setting `vertical-align` removes the whitespace that appears under `img`
+//     elements when they are dropped into a page as-is. Safer alternative to
+//     using `display: block;`.
+
+img {
+  font-style: italic; // [1]
+  max-width: 100%; // [2]
+  vertical-align: middle; // [3]
+
+  &[width],
+  &[height] {
+    max-width: none;
+  }
+}

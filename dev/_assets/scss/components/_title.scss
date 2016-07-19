@@ -1,11 +1,12 @@
-.title {
-    &--has-sub {
-        display: inline-block;
-    }
+//  # Title
+//  TODO: rename these, they're modifications of nothing
 
-    &--is-sub {
-        display: inline-block;
-        font-style: italic;
-        margin-left: $ratio--inv#{em};
-    }
+.title--has-sub {
+  display: inline-block;
+}
+
+.title--is-sub {
+  display: inline-block;
+  font-style: italic;
+  margin-left: #{$ratio--inv}em;
 }

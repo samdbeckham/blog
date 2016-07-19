@@ -1,0 +1,10 @@
+//  # Breakpoints
+//  These are used by the breakpoints mixin but are available globally should
+//  you need them.
+
+$breakpoints: (
+  'extra-small': 26em,
+  'small': 38em,
+  'medium': 56em,
+  'large': 72em
+);

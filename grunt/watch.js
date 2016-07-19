@@ -20,7 +20,7 @@ module.exports = {
     },
     jekyll: {
         files: [
-            'dev/{wrote,made}/{_drafts,_posts}/*.{md,markdown}',
+            'dev/{_drafts,_posts}/*.{md,markdown}',
             'dev/*.{md,markdown}',
             'dev/_layouts/*.html',
             'dev/_includes/*.html',

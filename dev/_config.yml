@@ -1,5 +1,19 @@
 name: Sam Beckham
 markdown: kramdown
+url: https://sam.beckham.io
 permalink: /:categories/:title
 exclude: ['config', 'README.md']
 include: ['.htaccess']
+permalink: wrote/:title.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+
+jekyll-crosspost_to_medium:
+    enabled: true
+    status: draft

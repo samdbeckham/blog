@@ -1,0 +1,11 @@
+//  # Page Header
+
+.page-header {
+  background-color: transparent;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 1s;
+  z-index: 999;
+}
