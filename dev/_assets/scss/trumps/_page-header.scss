@@ -1,0 +1,12 @@
+//  # Page Header
+
+.page-header {
+  a {
+    color: $color__white;
+  }
+
+  .wrapper {
+    padding-bottom: 0;
+    padding-top: #{$ratio--inv}em;
+  }
+}

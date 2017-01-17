@@ -1,14 +1,16 @@
 /*global self: true, caches: true */
 'use strict';
 
-const expectedCaches = ['static-v3.5.1'];
+const cache = {
+    version: '3.6.1'
+};
 
 self.addEventListener('fetch', event => {
     const url = new URL(event.request.url);
 
     if(url.pathname.endsWith('html') &&
         url.pathname.startsWith('/wrote')) {
-        caches.open('static-v3.5.1')
+        caches.open(cache.version)
             .then(cache => cache.add(url));
     }
 
@@ -25,7 +27,7 @@ self.addEventListener('fetch', event => {
 
 self.addEventListener('install', event => {
     event.waitUntil(
-        caches.open('static-v3.5.1')
+        caches.open(cache.version)
             .then(cache => cache.addAll([
                 '/scripts/vendor/modernizr.js',
                 '/scripts/main.js',
@@ -41,7 +43,7 @@ self.addEventListener('activate', event => {
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.map(cacheName => {
-                    if (!expectedCaches.includes(cacheName)) {
+                    if (cache.version !== cacheName) {
                         return caches.delete(cacheName);
                     }
                 })

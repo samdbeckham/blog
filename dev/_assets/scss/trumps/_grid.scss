@@ -1,0 +1,46 @@
+//  # Grid
+//  The grid is set out as a series of helper classes to keep the markup a
+//  little cleaner.
+
+%layout__container {
+  margin: 0 auto;
+  max-width: map-get($breakpoints, large);
+  padding: #{$ratio}em;
+  position: relative;
+  width: 100%;
+}
+
+%layout__default {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+%layout__gutter {
+  @include breakpoint(small) {
+    width: percentage(map-get($columns, a) + map-get($columns, b));
+  }
+}
+
+%layout__content {
+  @include breakpoint(small) {
+    margin-left: percentage(1 - map-get($columns, d));
+    width: percentage(map-get($columns, d));
+  }
+}
+
+%layout__content--with-gutter {
+  @include breakpoint(small) {
+    margin-left: percentage(map-get($columns, c));
+    width: percentage(map-get($columns, d));
+  }
+}
+
+%layout__header {
+  align-content: center;
+  align-items: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  height: #{map-get($columns, d) * 100}vh;
+  width: 100%;
+}

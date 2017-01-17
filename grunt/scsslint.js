@@ -3,8 +3,8 @@ module.exports = {
         options: {
             config: '.scss-lint.yml',
             exclude: [
-                'dev/_assets/scss/base/_reset.scss',
-                'dev/_assets/scss/base/_shame.scss'
+                'dev/_assets/scss/generic/_reset.scss',
+                'dev/_assets/scss/trumps/_shame.scss'
             ]
         },
         files: [{

@@ -1,0 +1,12 @@
+//  # Links
+
+a {
+  color: $color__blue;
+  transition: color .4s;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $color__blue--light;
+  }
+}
