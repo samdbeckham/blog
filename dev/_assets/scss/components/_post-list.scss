@@ -1,5 +1,9 @@
 //  # Post list
 
+.post-list {
+  margin: 0;
+}
+
 .post-list__item {
   display: inline-block;
   padding: #{$ratio--inv}em;

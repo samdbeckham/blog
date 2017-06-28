@@ -2,6 +2,10 @@
 
 .nav {
   margin-bottom: #{$ratio--inv}em;
+
+  ul {
+    margin: 0;
+  }
 }
 
 .nav__item {
