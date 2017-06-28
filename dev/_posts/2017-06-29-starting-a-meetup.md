@@ -6,15 +6,15 @@ background: '#D24D57'
 
 Last week I attended the Web Community Leaders Summit (UK/IE) at the Google offices in London.
 
-I was representing [Frontend NE](https://frontendne.co.uk) and was amongst organisers of various meetups from the UK and Ireland.
+I was representing [Frontend NE](https://frontendne.co.uk) amongst [community leaders](https://twitter.com/rupertwhitehead/status/878490488487243776) from the UK and Ireland.
 We talked about our meetups, the issues we faced, and how we overcame those issues.
-It was a day of sharing and a great relief to hear that most of them had the same woes we did in running a meetup.
-The day inspired me to write this post.
-A story of how Frontend NE began, where it ended up, and where we plan to take it next.
+It was a day of sharing and a great relief to hear that most of them had the same challenges we did in running a meetup.
+The day inspired me to write this post:
+A story of how Frontend NE began, where it ended up, and where we plan to take it [next](https://2018.frontendne.co.uk).
 With all our failures and successes along the way.
 
 ## The Set-Up
-An [Englishman](https://twitter.com/samdbeckham), an [Irishman](https://twitter.com/mynameiscolin), and a [Scotsman](https://twitter.com/tempertemper) walked into a bar…
+An [Englishman](https://twitter.com/samdbeckham), an [Irishman](https://twitter.com/htmlandbacon), and a [Scotsman](https://twitter.com/tempertemper) walked into a bar…
 
 ![A screenshot of the tweet that started it all. Colin's account is private so I couldn't embed it.](/images/articles/frontendne/one-tweet-to-start-it-all.png)
 
@@ -22,7 +22,7 @@ After a Tweet from Colin (who isn't actually Irish) we met up at the local Brew 
 We had a long discussion about meetups—and the lack thereof—in Newcastle.
 There were a few that had come and gone, but we wanted better.
 We wanted a consistent meetup for Front end developers, with great talks and a better community.
-Several beers later, we decided we would start our own.
+Several beers later, we decided to [start our own](https://xkcd.com/927/).
 
 Later that night we registered a Mailchimp account and set up a newsletter signup on a holding page.
 Then tweeted it out so there was no going back.
@@ -31,19 +31,19 @@ Then tweeted it out so there was no going back.
 
 Right from the start we knew consistency was key.
 The original plan was to have it bimonthly, but that got confusing.
-Bimonthly means both, twice a month, and once every two months.
+[Bimonthly](https://en.oxforddictionaries.com/explore/bimonthly) means both, twice a month, and once every two months.
 English can be a strange language.
-We changed it to monthly and checked [tech diary](#) for clashes with other meetups.
+We changed it to monthly and checked [tech diary](https://www.techdiary.co.uk/ne) for clashes with other meetups.
 The first Thursday of the month was our new date and we drilled that date into everyone's heads.
-It's right after pay day, it's easy to remember, and it falls on Star Wars day once every few years.
+It's right after pay day, it's easy to remember, and it falls on [Star Wars day](https://en.wikipedia.org/wiki/Star_Wars_Day) once every few years.
 
 Armed with our new date, we booked a venue.
-[Campus North](#) hosted a lot of meetups in the past, so we approached them first.
+[Campus North](http://campusnorth.co.uk/) hosted a lot of meetups in the past, so we approached them first.
 They allowed us to use their back room, provided we showed a slide of their sponsors during the event.
-We set a date for the first Thursday of the following month, April 2nd 2015.
+We set a date for the first Thursday of the following month, [April 2nd 2015](https://frontendne.co.uk/events/2015-04-02).
 
 All we had left, was to find a speaker.
-We set up a typeform survey as a make-shift call for speakers and sent it out to our growing mailing list.
+We set up a [typeform](https://www.typeform.com/) survey as a make-shift call for speakers and sent it out to our growing mailing list.
 We pestered anyone and everyone that would listen, and put links to the CFP anywhere that would let us.
 Then we sat back and waited for the proposals to come in.
 We got a lot of submissions.
@@ -53,7 +53,7 @@ We wanted to book as far ahead as we could so it wouldn't fizzle out.
 
 Somewhere along the way (I forget the chronology of all this) we found some sponsors.
 As with the rest of this process, we leaned on our friends to help us out.
-[Jamie Hurst](#) agreed to pick up the pizza tab, whilst [Peacock Carter](#) brought along some drinks.
+[Jamie Hurst](https://twitter.com/jamiefdhurst?lang=en) agreed to pick up the pizza tab, whilst [Peacock Carter](http://www.peacockcarter.com/) brought along some drinks.
 We could never have gotten started without the help of these people and are ever grateful to them.
 
 ![Our first batch of Stickers](/images/articles/frontendne/stickers.jpg)
@@ -90,10 +90,10 @@ We had two great talks, which we recorded by propping up an iPhone, on a beer bo
 
 <p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Look <a href="https://twitter.com/tempertemper">@tempertemper</a> no hands! <a href="http://t.co/DNwx3ACE9C">pic.twitter.com/DNwx3ACE9C</a></p>&mdash; Sam Beckham (@samdbeckham) <a href="https://twitter.com/samdbeckham/status/583696616588238849">April 2, 2015</a></blockquote></p>
 
-The quality is understandably terrible, but you can see both talks on our YouTube channel.
+The quality is understandably terrible, but you can see both talks on [our YouTube channel](https://www.youtube.com/frontendne).
 
- - Speedy Semantic layout with Suzy - Martin Underhill
- - The Power of SCSS - Rob Walker
+ - [Speedy, Solid, Semantic layout; with Susy](https://www.youtube.com/watch?v=-jh0rHHvIzw) - Martin Underhill
+ - [CSS to SCSS](https://www.youtube.com/watch?v=e5W-o-AxZUQ) - Rob Walker
 
 ## Conclusion
 In writing this post I went back through my archived notebooks (yes, I archive my notebooks).
