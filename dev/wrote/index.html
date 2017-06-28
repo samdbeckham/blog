@@ -3,7 +3,7 @@ layout: default
 title: Stuff I wrote
 ---
 
-<section class="page post-list">
+<section class="page">
     <header class="page__header">
     	<div class="wrapper">
             <div class="page__headings">
@@ -20,7 +20,7 @@ title: Stuff I wrote
                 As a result of this, some of the older posts reference examples that no-longer exist.
                 Tread carefully.
             </p>
-        	<ul class="post-list__list">
+        	<ul class="post-list">
             	{% for post in site.posts %}
         			<li class="post-list__item">
         				<a href="{{ post.url }}" class="card" style="background:{{ post.background }}">
