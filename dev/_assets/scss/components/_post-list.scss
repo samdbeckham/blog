@@ -1,19 +1,25 @@
 //  # Post list
 
 .post-list {
+  display: grid;
+  list-style: none;
   margin: 0;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 1em;
 }
 
-.post-list__item {
-  display: inline-block;
-  padding: #{$ratio--inv}em;
-  width: percentage(1 / 2);
+@supports not (display: grid) {
+  .post-list__item {
+    display: inline-block;
+    padding: #{$ratio--inv}em;
+    width: percentage(1 / 2);
 
-  @include breakpoint(extra-small) {
-    width: percentage(1 / 3);
-  }
+    @include breakpoint(extra-small) {
+      width: percentage(1 / 3);
+    }
 
-  @include breakpoint(medium) {
-    width: percentage(1 / 4);
+    @include breakpoint(medium) {
+      width: percentage(1 / 4);
+    }
   }
 }
