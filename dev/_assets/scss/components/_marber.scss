@@ -1,0 +1,25 @@
+//  # Wrapper
+
+.marber {
+  margin: 0 auto;
+  max-width: map-get($breakpoints, large);
+  padding: #{$ratio}em;
+  position: relative;
+  width: 100%;
+
+  display: grid;
+  grid-template-areas:
+      "header"
+      "gutter"
+      "content"
+      "footer";
+  grid-column-gap: 1em;
+
+  @include breakpoint(small) {
+    grid-template-columns: .243fr .747fr;
+    grid-template-areas:
+      "header header"
+      "gutter content"
+      "footer footer";
+  }
+}

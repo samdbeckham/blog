@@ -1,5 +1,9 @@
 //  # Wrapper
 
 .wrapper {
-  @extend %layout__container;
+  margin: 0 auto;
+  max-width: map-get($breakpoints, large);
+  padding: #{$ratio}em;
+  position: relative;
+  width: 100%;
 }

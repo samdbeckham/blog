@@ -1,7 +1,6 @@
 //  # Page
 
 .page__header {
-  @extend %layout__default;
   @extend %layout__header;
 
   background-attachment: fixed;
@@ -30,7 +29,6 @@
 }
 
 .page__headings {
-  @extend %layout__default;
   @extend %layout__content;
 
   background-color: $color__white;
@@ -42,7 +40,6 @@
 }
 
 .page__content {
-  @extend %layout__default;
   @extend %layout__content;
 
   color: $color__gray--dark;

@@ -4,16 +4,16 @@ layout: default
 
 <article class="page">
     <header class="page__header">
-    	<div class="wrapper">
+        <div class="wrapper marber">
             <div class="page__headings">
-    	        <h1 class="page__title">{{ page.title }}</h1>
-    	        <span class="page__date--header">{{ page.date | date: "%-d %B %Y" }}</span>
+                <h1 class="page__title">{{ page.title }}</h1>
+                <span class="page__date--header">{{ page.date | date: "%-d %B %Y" }}</span>
             </div>
-	    </div>
+        </div>
     </header>
-	<div class="wrapper">
-    	<div class="page__content">
-	    	{{ content }}
+    <div class="wrapper marber">
+        <div class="page__content">
+            {{ content }}
             <h2 class="title--has-sub">Blog</h2>
             <a href="/wrote" class="title--is-sub">See All</a>
             <ul class="post-list">
@@ -29,6 +29,6 @@ layout: default
                     </li>
                 {% endfor %}
             </ul>
-	    </div>
+        </div>
     </div>
 </article>
