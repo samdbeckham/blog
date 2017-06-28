@@ -1,41 +1,124 @@
 ---
 layout: article
-title: Frontend NE
-background: '#4c5c7e'
+title: Starting a user group
+background: '#D24D57'
 ---
 
-Last week I attended the Web Community Leaders Summit (UK/IE) at the Google headquarters in London.
+Last week I attended the Web Community Leaders Summit (UK/IE) at the Google offices in London.
 
-I was representing [Frontend NE](https://frontendne.co.uk) and was amongst organisers of various meet ups in the UK and Ireland. We talked about our meet ups, the issues we faced, and how we overcame those issues. It was a day of sharing and a great relief to hear that most of them had the same woes we have in running a meet up. The day has inspired me to write this post. A post about how Frontend NE began, where it ended up, and where we plan to take it next. With a few stories of our failures and successes along the way.
+I was representing [Frontend NE](https://frontendne.co.uk) and was amongst organisers of various meet ups from the UK and Ireland.
+We talked about our meet ups, the issues we faced, and how we overcame those issues.
+It was a day of sharing and a great relief to hear that most of them had the same woes we did in running a meet up.
+The day inspired me to write this post.
+A story of how Frontend NE began, where it ended up, and where we plan to take it next.
+With all our failures and successes along the way.
 
-## The beginning
+## The Set-Up
 An [Englishman](https://twitter.com/samdbeckham), an [Irishman](https://twitter.com/mynameiscolin), and a [Scotsman](https://twitter.com/tempertemper) walked into a bar…
 
-We had a long discussion about meet ups, and the lack thereof in Newcastle. There were a few that had come and gone, but we wanted better. We wanted a consistent meet up for Front end developers, with good talks and a decent commuinty. Several beers and a Brew dog Deli platter later, we decided we would make our own.
+We had a long discussion about meet ups—and the lack thereof—in Newcastle.
+There were a few that had come and gone, but we wanted better.
+We wanted a consistent meet up for Front end developers, with great talks and a better community.
+Several beers later, we decided we would start our own.
 
-Later that night I registered a mail chimp account and set up a newsletter signup on a holding page. And tweeted it out so there was no going back.
-  
-https://twitter.com/samdbeckham/status/565516838449475584
+Later that night we registered a Mailchimp account and set up a newsletter signup on a holding page.
+Then tweeted it out so there was no going back.
 
-The first thing we did after that was set up a Slack channel. Not a public one, but one for the three of us to bounce our ideas around and see what stuck. Right from the start we knew consistency was key. The original plan was to have it bimonthly, but that got confusing. Mainly because bimonthly both means twice a month and once every two months. English can be a strange language. We changed it to monthly and checked [tech diary](#) for clashes with other meet ups. Finally, we settled on the first Thursday of every month. It's right after pay day, it's easy to remember and it falls on Star Wars day once every few years.
+<p><blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">How does a North East front-end meet up sound? If your answer to that is, &#39;awesome&#39; — sign up here to be notified. <a href="http://t.co/JhSwU7vRu2">http://t.co/JhSwU7vRu2</a></p>&mdash; Sam Beckham (@samdbeckham) <a href="https://twitter.com/samdbeckham/status/565516838449475584">11 February 2015</a></blockquote></p>
 
-Armed with our new date, we booked a venue. [Campus North](#)  hosted a lot of meet ups in the past so we approached them first. They allowed us to use their back room provided we showed a slide of their sponsors during the event. We set a date for the first Thursday of the following month, April 2nd 2015.
+Right from the start we knew consistency was key.
+The original plan was to have it bimonthly, but that got confusing.
+Apparently bimonthly means both, twice a month, and once every two months.
+English can be a strange language.
+We changed it to monthly and checked [tech diary](#) for clashes with other meet ups.
+The first Thursday of the month was our new date and we drilled that date into everyone's heads.
+It's right after pay day, it's easy to remember, and it falls on Star Wars day once every few years.
 
-Now that we had a date set and about 40 people on our (heavily promoted) mailing list, it was time to find a speaker. We set up a type form survey as a make-shift call for speakers and sent it out to our mailing list. We pestered anyone and everyone that would listen and put links to the CFP anywhere that would let us. Then we sat back and waited for the proposals to come in. We got a lot of submissions. A lot of them were spam, some of them were nonsense, but the majority of them were potential candidates. From that pool of proposals, we created a backlog and booked people in for the first two meet ups.
+Armed with our new date, we booked a venue.
+[Campus North](#) hosted a lot of meet ups in the past, so we approached them first.
+They allowed us to use their back room, provided we showed a slide of their sponsors during the event.
+We set a date for the first Thursday of the following month, April 2nd 2015.
 
-Somewhere along the way (I forget the chronology of all this) we found some sponsors. As with the rest of this process, we leaned on our friends to help us out. [Jamie Hurst](#) agreed to pick up the pizza tab, whilst [Peacock Carter](#) brought along some drinks.
+All that was left, was to find a speaker.
+We set up a typeform survey as a make-shift call for speakers and sent it out to our growing mailing list.
+We pestered anyone and everyone that would listen, and put links to the CFP anywhere that would let us.
+Then we sat back and waited for the proposals to come in.
+We got a lot of submissions.
+Some of them were spam, some of them were nonsense, but the majority of them were potential candidates.
+This allowed us to create a backlog and start booking people in for the first few meet ups.
+We wanted to book as far ahead as we could so it wouldn't fizzle out.
 
-We had a date, a venue, some sponsors, and two speakers. Now we could get into promoting the event. We designed a logo, ordered stickers, extended the website, and set up [tito](http://ti.to) so we could sell tickets for the event. Every opportunity we got to talk about the event, we seized. Partly to promote it, but also because of our excitement to be finally doing it.
+Somewhere along the way (I forget the chronology of all this) we found some sponsors.
+As with the rest of this process, we leaned on our friends to help us out.
+[Jamie Hurst](#) agreed to pick up the pizza tab, whilst [Peacock Carter](#) brought along some drinks.
+We could never have gotten started without the help of these people and are ever grateful to them.
+
+We had a date, a venue, some sponsors, and speakers.
+Now we could get into promoting the event.
+We designed a logo, ordered stickers, extended the website, and set up [tito](http://ti.to) so we could sell tickets for the event.
+Every opportunity we got to talk about the event, we seized.
+Partly to promote it, but also due to our own excitement.
+We had wanted something like this for a while now and there was a decent amount of interest for it.
 
 ## The first event
 
-We announced that we would be releasing (free) tickets a week before our first event. There were 30 tickets since this is what the room we hired could handle. We hoped for 20 people, expected 15m and would have been happy with 10. The tickets released at 1:00pm on the 26th of March. When we checked back 2 hours later, they were all gone. Every, single, one. 30 people may not seem like a lot, but given the state of local meet ups at the time, this was unheard of. People were tweeting us demanding more tickets get released. This was the first time we realised we were on to something. People wanted this almost as much as we did.
+We announced that we would be releasing (free) tickets a week before our first event.
+The room we hired could only fit 30 people confortably, so we made 30 tickets available.
+We hoped for 20 people, expected 15, and would have been happy with 10.
+The tickets released at 1:00pm on the 26th of March.
+When we checked back 2 hours later, they were all gone.
+Every single one.
 
-The venue would only allow us 50 people due to the fire regulations. So we released another 20 tickets the following day at 1pm. By 2pm, they had all gone again. [Unbelievable Jeff](https://www.youtube.com/watch?v=iJuhir-okps).
+30 people may not seem like a lot, but it was far more than we were expecting.
+We certainly didn't expect a sellout.
+People were tweeting us asking fori more tickets to be released.
+We realised we were on to something.
+People wanted this almost as much as we did.
 
-The event went off without a hitch. We had two great talks from [Robb Walker]() and [Martin Underhill]() (the Scottish member of our trio). The free pizza and beers went down as well as expected, and there was a great turnout in the pub next door after the event.
+The venue would only allow us 50 people due to the fire regulations.
+So we released another 20 tickets the following day at 1pm.
+By 2pm, they had all gone again.
+
+The event was packed.
+I had to stand outside the door in order to fit people in.
+We had two great talks, which we recorded by propping up an iPhone, on a beer bottle, on a ladder, at the back of the room.
+
+<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Look <a href="https://twitter.com/tempertemper">@tempertemper</a> no hands! <a href="http://t.co/DNwx3ACE9C">pic.twitter.com/DNwx3ACE9C</a></p>&mdash; Sam Beckham (@samdbeckham) <a href="https://twitter.com/samdbeckham/status/583696616588238849">April 2, 2015</a></blockquote></p>
+
+The quality is understandably terrible, but you can see both talks on our YouTube channel.
+
+ - Speedy Semantic layout with Suzy - Martin Underhill
+ - The Power of SCSS - Rob Walker
 
 ## To be continued
-In writing this post I went back through my archived notebooks (yes, I archive my notebooks). I then realised how much we put into starting this thing up. None of it seemed like hard work at the time because we had a genuine passion for what we were doing.
+In writing this post I went back through my archived notebooks (yes, I archive my notebooks).
+I then realised how much we put into starting this thing up.
+None of it seemed like hard work at the time because we had a genuine passion for what we were doing.
 
-There's still a lot more of this story to tell. The addition of paying sponsors, the ever evolving video process, the loss of our venue, and much more. But I'll follow up on all that in another post(s). There's a lot to write and I want to try out Medium's new series feature. Till next time!
+If I could give three pieces of advice for anyone wanting to set something like this up themselves, they would be this:
+
+1. **Be passionate, and find other passionate people to help you.**
+If you're not that into this, it won't get done.
+There's times when I can't be bothered or can't find the time to run this.
+That's where having more than one organiser helps.
+They're there to pick up your slack and keep you motivated.
+Just be sure to pick up theirs too.
+
+2. **Be consistant.**
+This isn't always possible, but having a consistent date for your meetups really helps attendance.
+If people know when your event is without having to be told, you're on to a winner.
+It also helps with planning future meetups.
+We can book up events as far into the future as we like because we know when every event will be.
+
+3. **Plan ahead.**
+When we started this meetup, we planned the first two months at the same time.
+We were going through the CFP anyway, so we contacted a few people and got all the booking out of the way there and then.
+Now we go a step further and book up several months in advance.
+Not only does this save us time and allow us to concentrate finding speakers for the year into a few weeks, but our venue costs are cheaper because we can make a block booking.
+We're currently booked up until 2018, with March and April's slots already filled.
+
+There's still a lot more of this story to tell.
+Attracting bigger sponsors, the ever evolving video process, the loss of our venue, and much more.
+But I'll follow up on all that in another post(s).
+There's a lot to write and I want to try out Medium's new series feature.
+Till next time!
