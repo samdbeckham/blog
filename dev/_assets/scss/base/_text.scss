@@ -22,9 +22,4 @@ strike {
 p {
   margin-bottom: #{$ratio--inv}em;
   max-width: $paragraph-width;
-
-  &:first-of-type {
-    font-size: #{$ratio}em;
-    line-height: #{$ratio}em;
-  }
 }

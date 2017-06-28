@@ -46,4 +46,9 @@
   @extend %layout__content;
 
   color: $color__gray--dark;
+
+  > p:first-of-type {
+    font-size: #{$ratio}em;
+    line-height: #{$ratio}em;
+  }
 }
