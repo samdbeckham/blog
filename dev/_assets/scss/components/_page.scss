@@ -1,14 +1,16 @@
 //  # Page
 
 .page__header {
-  @extend %layout__header;
-
-  background-attachment: fixed;
+  align-content: center;
+  align-items: flex-end;
   background-color: $color__black;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: row wrap;
+  grid-area: header;
+  height: #{map-get($columns, d) * 100}vh;
   position: relative;
   transition: transform .4s $ease--bounce-in;
+  width: 100%;
   z-index: 1;
 
   &::before {
@@ -29,9 +31,8 @@
 }
 
 .page__headings {
-  @extend %layout__content;
-
   background-color: $color__white;
+  grid-area: content;
   padding: #{$ratio--inv}em;
 }
 
@@ -40,9 +41,8 @@
 }
 
 .page__content {
-  @extend %layout__content;
-
   color: $color__gray--dark;
+  grid-area: content;
 
   > p:first-of-type {
     font-size: #{$ratio}em;
