@@ -7,4 +7,9 @@ blockquote {
   @include breakpoint (small) {
     margin-left: #{-2 * $ratio--inv}em;
   }
+
+  p {
+    font-size: #{$ratio}em;
+    line-height: #{$ratio}em;
+  }
 }

@@ -16,7 +16,7 @@ layout: default
 	    	{{ content }}
             <h2 class="title--has-sub">Blog</h2>
             <a href="/wrote" class="title--is-sub">See All</a>
-            <ul>
+            <ul class="post-list">
                 {% for post in site.posts | limit: 4 %}
                     <li class="post-list__item">
                         <a href="{{ post.url }}" class="card" style="background:{{ post.background }}">

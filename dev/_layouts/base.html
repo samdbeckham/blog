@@ -16,6 +16,7 @@
         {% endif %}
         <meta name="theme-color" content="{{ background }}">
         <link rel="manifest" href="/manifest.json">
+        <style>{% include base-styles.css %}</style>
 
         <link rel="shortcut icon" href="/favicon.ico">
         <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -38,9 +39,9 @@
         </script>
     </head>
 
-    <body {% if page.slug %}class="page__{{ page.slug }}"{% endif %} style="background-color:{{ background }}">
-        <div class="hide">{% include icon-sprite.svg %}</div>
+    <body{% if page.slug %} class="page__{{ page.slug }}"{% endif %}>
         {{ content }}
         <script src="/scripts/main.js"></script>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </body>
 </html>
