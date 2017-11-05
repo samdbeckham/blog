@@ -1,0 +1,28 @@
+{
+  "search.exclude": {
+    ".sass-cache": true,
+    ".DS_store": true,
+    ".tmp": true,
+    ".vscode": true,
+    "*.bak": true,
+    "node_modules": true,
+    "bower_components": true,
+    "_drafts": true,
+    "web": true,
+    "npm-debug.log": true,
+    "*.sublime-workspace": true
+  },
+  "files.exclude": {
+    ".sass-cache": true,
+    ".DS_store": true,
+    ".tmp": true,
+    ".vscode": true,
+    "*.bak": true,
+    "node_modules": true,
+    "bower_components": true,
+    "_drafts": true,
+    "web": true,
+    "npm-debug.log": true,
+    "*.sublime-workspace": true
+  }
+}
