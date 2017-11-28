@@ -2,6 +2,7 @@
 layout: article
 title: I Have No Idea what I'm Doing
 background: '#4c5c7e'
+video: 'Xs5EBJVwadE'
 ---
 Everything we have learned is something we knew nothing about at some point. We all have to start somewhere.
 
@@ -18,7 +19,3 @@ I have decided to share my learning experience with the world. I started using [
 Every fortnight I'll be publishing a new video documenting myself learning VueX and creating my very first app with it. [Episode 0](#) is available now where I talk a little about what I'm doing and pour over the VueX documentation. The video quality is poor, the audio quality is worse, and my presentation skills are lacking. But none of that matters. Like everything, they'll all get better with practice.
 
 So join me on my journey. Come watch me fail spectacularly, then re-write everything once I know the correct way to do it. Comment on where I'm going wrong so we can lift each other up and learn together. I'm going to hold my hand up and proudly say, "I have no idea what I'm doing, yet".
-
-* * *
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bnN-k2Beo4E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
