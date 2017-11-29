@@ -2,7 +2,7 @@
 layout: article
 title: I Have No Idea What I'm Doing
 background: '#4c5c7e'
-video: 'Xs5EBJVwadE'
+video: 'OQuWEtpDS-0'
 ---
 Everything we have learned is something we knew nothing about at some point. We all have to start somewhere.
 
@@ -16,6 +16,6 @@ This got me thinking. What if we learned by watching other people learn? Instead
 
 I have decided to share my learning experience with the world. I started using [Vue](https://vuejs.org/) quite recently and I want to learn more about it. Specifically, I want to learn all about [VueX](https://vuex.vuejs.org/en/). I used Vue to build [a website](https://phmuseum.com/) way back in the olden days of 2015 but it's come a long way since then.
 
-Every fortnight I'll be publishing a new video documenting myself learning VueX and creating my very first app with it. [Episode 0](#) is available now where I talk a little about what I'm doing and pour over the VueX documentation. The video quality is poor, the audio quality is worse, and my presentation skills are lacking. But none of that matters. Like everything, they'll all get better with practice.
+Every fortnight I'll be publishing a new video documenting myself learning VueX and creating my very first app with it. [Episode 0](https://youtu.be/OQuWEtpDS-0) is available now where I talk a little about what I'm doing and pour over the VueX documentation. The video quality is poor, the audio quality is worse, and my presentation skills are lacking. But none of that matters. Like everything, they'll all get better with practice.
 
 So join me on my journey. Come watch me fail spectacularly, then re-write everything once I know the correct way to do it. Comment on where I'm going wrong so we can lift each other up and learn together. I'm going to hold my hand up and proudly say, "I have no idea what I'm doing, yet".
