@@ -2,6 +2,7 @@
 layout: article
 title: Public Speaking is Scary
 background: '#f1c40f'
+video: 'AQKH3gSY6XU'
 ---
 
 Alongside spiders, heights, and clowns; public speaking is one of the most common fears. The official term for it is [Glossophobia](http://www.fearof.net/fear-of-public-speaking-phobia-glossophobia/), and it’s ranked as the 13th most common fear in the world. Which is even worse news if you’re [triskaidekaphobic](http://www.fearof.net/fear-of-the-number-13-phobia-triskaidekaphobia/ "Fear of The Number 13 Phobia – Triskaidekaphobia").
@@ -33,8 +34,6 @@ Let’s skip ahead to the day of the talk. As I walked in to the event, another 
 It’s time. I’m set up at the side of the stage. 300 faces are staring back at me. The compare introduces me and I walk on to applause. I take a sip of water and begin, “Hello, my name is Sam Beckham and I’m here to talk about Polymer.”
 
 All my practicing had paid off. It felt like being back behind my drum kit in my gigging days. Going through the pre-rehearsed motions, knowing exactly what was coming and what I had to do. It didn’t matter whether there were 300 people or 3,000 people. I just gave them the same performance I gave my webcam in the practice runs. I was facing my fear and loving every minute of it.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AQKH3gSY6XU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 * * *
 

@@ -1,5 +1,6 @@
 .sass-cache
 .DS_store
+.vscode
 .tmp
 *.bak
 node_modules
