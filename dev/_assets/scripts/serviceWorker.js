@@ -2,7 +2,7 @@
 'use strict';
 
 const cache = {
-    version: '3.8.2'
+    version: '3.9.0'
 };
 
 self.addEventListener('fetch', event => {
