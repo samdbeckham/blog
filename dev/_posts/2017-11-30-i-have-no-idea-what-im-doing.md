@@ -2,7 +2,7 @@
 layout: article
 title: I Have No Idea What I'm Doing
 background: '#4c5c7e'
-video: 'OQuWEtpDS-0'
+video: 'videoseries?list=PLQnVLZV0MsRKVTJvKDTFsyWYRLn499JP6'
 ---
 Everything we have learned is something we knew nothing about at some point. We all have to start somewhere.
 
