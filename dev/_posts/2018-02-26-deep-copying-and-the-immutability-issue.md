@@ -27,17 +27,17 @@ To understand the problem, we need to look at **three ways of copying objects**.
 Okay, so let's strip this all the way back.
 Let's create a mutable reference to an object.
 
-```javascript
+{% highlight javascript %}
 const initialObject = { name: "Sam", twitter: "@samdbeckham" };
 const newObject = initialObject;
-```
+{% endhighlight %}
 
 This is bad for immutability because any changes to `newObject` reflect in `initialObject` like so:
 
-```javascript
+{% highlight javascript %}
 newObject.twitter = "@frontendne";
 console.log(initialObject.twitter); // @frontendne
-```
+{% endhighlight %}
 
 In this example, `newObject` is a reference to `initialObject`.
 So whenever we get or set data on either of these objects it is also applied to the other object.
@@ -49,21 +49,21 @@ This is the most common form of copying data in an immutable manner.
 We utilise the spread operator to create a copy of `initialObject`.
 If you've used redux before, you'll have seen this inside your reducers.
 
-```javascript
+{% highlight javascript %}
 const initialObject = { name: "Sam", twitter: "@samdbeckham" };
 const newObject = { ...initialObject };
-```
+{% endhighlight %}
 
 There's not a huge difference in how we create the data.
 But `newObject` is no-longer linked to `initialObject`.
 It is now a copy of the data and an entirely new object.
 So if we make the same change we did earlier, we get the following result:
 
-```javascript
+{% highlight javascript %}
 newObject.twitter = "@frontendne";
 console.log(initialObject.twitter); // @samdbeckham
 console.log(newObject.twitter); // @frontendne
-```
+{% endhighlight %}
 
 Modifying the data on `newObject` doesn't affect `initialObject` anymore.
 We can go about our day, modifying `newObject` and `initialObject` remains clean.
@@ -71,7 +71,7 @@ We can go about our day, modifying `newObject` and `initialObject` remains clean
 But this is a shallow copy, and the immutability is only one level deep.
 To show this, we need an object inside our `initialObject`:
 
-```javascript
+{% highlight javascript %}
 const initialObject = {
   name: "Sam",
   social: {
@@ -80,35 +80,35 @@ const initialObject = {
   }
 };
 const newObject = { ...initialObject };
-```
+{% endhighlight %}
 
 At first glance, this `newObject` looks like an immutable copy of `initialObject` but look what happens when we do this:
 
-```javascript
+{% highlight javascript %}
 newObject.social.twitter = "@frontendne";
 
 console.log(initialObject.social.twitter); // @frontendne
-```
+{% endhighlight %}
 
 Sadly, the immutability is only skin deep.
 As soon as we go down another level, we're back to referencing values.
 If we were to open up `newObject`, it would look a bit like this:
 
-```javascript
+{% highlight javascript %}
 const newObject = {
   name: "Sam",
   social: initialObject.social
 };
-```
+{% endhighlight %}
 
 We can get around this issue by shallow copying one level deeper and defining `newObject` like so:
 
-```javascript
+{% highlight javascript %}
 const newObject = {
   ...initialObject,
   social: { ...initialObject.social }
 };
-```
+{% endhighlight %}
 
 This is how it's usually dealt with in redux, but it only adds one more level of immutability.
 If there are any other nested objects they will still be stored as references.
@@ -120,7 +120,7 @@ Finally, we get to deep copying.
 Deep copying offers us true object immutability.
 We can change **any** value in an object—no matter how deeply nested it is—and it won't mutate the data we copied it from.
 
-```javascript
+{% highlight javascript %}
 const initialObject = {
   name: "Sam",
   social: {
@@ -134,7 +134,7 @@ newObject.social.twitter = "@frontendne";
 
 console.log(initialObject.social.twitter); // @samdbeckham
 console.log(newObject.social.twitter); // @frontendne
-```
+{% endhighlight %}
 
 Hooray! We're immutable!
 
@@ -146,9 +146,9 @@ Das Surma wrote a [article on deep copy](https://dassur.ma/things/deep-copy/) wh
 
 This is the most concise and easy to understand method, and it looks like this:
 
-```javascript
+{% highlight javascript %}
 const deepCopy = object => JSON.parse(JSON.stringify(object));
-```
+{% endhighlight %}
 
 First we turn the object into a JSON string with `JSON.stringify()` then we convert that string back into an object with `JSON.parse()`.
 Stringifying the data throws out all references, making the returned object completely immutable.
@@ -165,13 +165,13 @@ It's like money laundering, only with data, and nowhere near as cool.
 
 For example, we can utilise the notification API:
 
-```javascript
+{% highlight javascript %}
 const deepCopy = object =>
   new Notification("", {
     data: object,
     silent: true
   }).data;
-```
+{% endhighlight %}
 
 This triggers a notification, silences it, then returns the data from that notification.
 Unfortunately, the user needs to be able to receive notifications for this to work.
