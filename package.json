@@ -8,7 +8,7 @@
     "minor": "grunt lint && grunt bump:minor",
     "patch": "grunt lint && grunt bump:patch"
   },
-  "version": "3.9.0",
+  "version": "3.9.1",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",
