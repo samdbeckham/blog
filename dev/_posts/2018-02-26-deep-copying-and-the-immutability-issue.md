@@ -2,6 +2,7 @@
 layout: article
 title: Deep Copy and the Immutability Issue
 background: '#FFC312'
+video: 'v6FQrXHv2h8?index=7&t=28s&list=PLQnVLZV0MsRKVTJvKDTFsyWYRLn499JP6'
 ---
 
 In the latest episode of, "[I Have No Idea What I'm Doing](https://www.youtube.com/watch?v=v6FQrXHv2h8&index=7&list=PLQnVLZV0MsRKVTJvKDTFsyWYRLn499JP6)" I learned that everything I thought I knew about immutability in Javascript was a lie.
