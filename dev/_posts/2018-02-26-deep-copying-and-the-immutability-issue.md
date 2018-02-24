@@ -54,9 +54,9 @@ const initialObject = { name: "Sam", twitter: "@samdbeckham" };
 const newObject = { ...initialObject };
 {% endhighlight %}
 
-There's not a huge difference in how we create the data.
-But `newObject` is no-longer linked to `initialObject`.
-It is now a copy of the data and an entirely new object.
+It's a subtle change, but the `...` makes all the difference.
+`newObject` is no-longer linked to `initialObject`.
+It's now a copy of the data and an entirely new object.
 So if we make the same change we did earlier, we get the following result:
 
 {% highlight javascript %}
@@ -113,6 +113,8 @@ const newObject = {
 This is how it's usually dealt with in redux, but it only adds one more level of immutability.
 If there are any other nested objects they will still be stored as references.
 You can see how (with certain data structures) this could get messy.
+
+___Note:__  `Object.assign()` and `Object.freeze()` have the same shallow copying issues as spread._
 
 ## Deep Copying
 
