@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Running a Conference
-background: '#4CAF7E'
+background: '#4daf7c'
 ---
 
 Running a conference is 24% blood, 62% sweat, 15% tears, and a pinch of being so overworked you forget how to count to 100.
@@ -49,9 +49,9 @@ Your speakers are the main reason people are attending your conference, so pay t
 Pay for their travel, pay for their accommodation, and pay for their time.
 
 At Frontend NE we paid **all** our speakers.
-We offered them travel from their door to ours, accommodation close to the venue, and a speaking fee of £1,000.
-We offered every speaker—no matter the calibre—the exact same package.
-With the option to donate some or their fee to a diversity fund.
+Including travel from their door to ours, accommodation close to the venue, and a speaking fee of £1,000.
+We offered every speaker the exact same package, regardless of age, experience, gender, or anything else.
+They could also donate some (or all) of their fee to our diversity fund.
 
 ## Have a diversity/student fund
 A diversity fund pays for tickets, travel, and accommodation for underrepresented people.
