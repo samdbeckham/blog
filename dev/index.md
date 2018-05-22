@@ -3,7 +3,7 @@ layout: homepage
 title: About
 ---
 
-Sam is a, front-end developer at [Bytemark](https://bytemark.co.uk), and co-organiser of [Frontend NE](https://frontendne.co.uk); a meetup for front-end developers in the North East.
+Sam is a, front-end developer at [Gitlab](https://gitlab.com), and co-organiser of [Frontend NE](https://frontendne.co.uk); a meetup for front-end developers in the North East.
 
 He's an advocate of pattern libraries and componentising elements; and has given [talks](http://lanyrd.com/profile/samdbeckham/) on both topics at several events and conferences in the past year.
 
